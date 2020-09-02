@@ -1,2 +1,2 @@
-body {background:black url(bg.png) no-repeat; background-size: cover; position: fixed; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body {background:black url(bg.png) no-repeat; background-size: cover; height:90%; width:90%; position: fixed; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 a {color:white; text-decoration: none;}
