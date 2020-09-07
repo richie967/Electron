@@ -49,14 +49,14 @@ h1 {
 @media (max-width: 797px) {
     html,
     body {
-        font-size: 80%;
+        font-size: 90%;
         letter-spacing: 0;
     }
 }
 @media (max-width: 479px) {
     html,
     body {
-        font-size: 60%;
+        font-size: 80%;
         letter-spacing: 0;
     }
     .logo,

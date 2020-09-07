@@ -36,12 +36,12 @@ iframe {
 @media (max-width: 479px) {
     html,
     body {
-        font-size: 60%;
+        font-size: 75%;
         letter-spacing: 0;
     }
     iframe {
         padding: 5px;
         width: 100%;
-        min-height: 100vh;
+        min-height: 80vh;
     }
 }
