@@ -54,11 +54,6 @@ h1 {
     }
 }
 @media (max-width: 479px) {
-    html,
-    body {
-        font-size: 80%;
-        letter-spacing: 0;
-    }
     .logo,
     .title-text-box {
         padding-left: 0;

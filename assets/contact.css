@@ -36,7 +36,7 @@ iframe {
 @media (max-width: 479px) {
     html,
     body {
-        font-size: 75%;
+        font-size: 80%;
         letter-spacing: 0;
     }
     iframe {
