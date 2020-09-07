@@ -23,11 +23,6 @@ body {
     scroll-behavior: smooth;
 }
 
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 50px;
-}
 iframe {
     padding: 40px;
     width: 100%;
