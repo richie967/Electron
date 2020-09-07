@@ -15,6 +15,7 @@ body {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    overflow: 0;
 }
 
 a:link,
@@ -43,8 +44,36 @@ h1 {
     font-size: 350%;
     text-transform: uppercase;
     color: #fff;
+    text-align: left;
 }
-
+@media (max-width: 797px) {
+    html,
+    body {
+        font-size: 80%;
+        letter-spacing: 0;
+    }
+}
+@media (max-width: 479px) {
+    html,
+    body {
+        font-size: 60%;
+        letter-spacing: 0;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    .logo,
+    .title-text-box {
+        padding-left: 0;
+        margin-left: 5px;
+    }
+    .nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: left;
+    }
+}
 header {
     display: flex;
     flex-direction: column;
@@ -53,7 +82,7 @@ header {
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 97vw;
 }
 
 nav {
@@ -61,6 +90,7 @@ nav {
     justify-content: flex-start;
     align-items: center;
     min-height: 150px;
+    width: 100vw;
 }
 
 .logo {
@@ -81,9 +111,11 @@ nav {
 
 .title-text-box {
     display: flex;
+    flex: 0 1 auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    text-align: center;
     padding: 33px;
     margin: 175px auto 0 50px;
     animation: fadeIn 1s ease-in;

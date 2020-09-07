@@ -33,3 +33,10 @@ iframe {
     width: 100%;
     min-height: 998px;
 }
+@media (max-width: 479px) {
+    html,
+    body {
+        font-size: 60%;
+        letter-spacing: 0;
+    }
+}
