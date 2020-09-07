@@ -39,4 +39,9 @@ iframe {
         font-size: 60%;
         letter-spacing: 0;
     }
+    iframe {
+        padding: 5px;
+        width: 100%;
+        min-height: 100vh;
+    }
 }
