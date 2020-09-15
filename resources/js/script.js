@@ -34,9 +34,11 @@ $(document).ready(function () {
         var icon = $('.js--nav-icon');
 
         $('.js--nav-links').slideToggle(300);
-        if (icon.hasClass('open')); {
+        if (icon.hasClass('open') || $('.js--nav-links').hasClass('sticky')) {
             icon.removeClass('open');
             $("nav").removeClass("nav-open");
+            $("nav").removeClass("sticky");
+            $('.js--nav-links').addClass('navbar');
         }
     });
 

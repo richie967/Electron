@@ -1,14 +1,18 @@
 @media (max-width: 1480px) {
-  .founders { 
+  .founders {
     flex-direction: column;
     justify-content: center;
-}
-.web-founders { flex-direction: row; }
-.web-img { 
-  margin-top: 33px;
-  margin-left: 33px;
-}
-.web-names figure { margin: 80px 0; }
+  }
+  .web-founders {
+    flex-direction: row;
+  }
+  .web-img {
+    margin-top: 33px;
+    margin-left: 33px;
+  }
+  .web-names figure {
+    margin: 80px 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -129,7 +133,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: max-content;
+    height: 10vh;
     background-color: rgba(231, 231, 231, 0.801);
     box-shadow: 0 2px 2px #b9b9b9;
     z-index: 9999;
@@ -137,7 +141,7 @@
   .sticky .company-name {
     color: #000;
   }
-  .sticky .nav-links {
+  .sticky .navbar .nav-links {
     display: flex;
   }
   .sticky .nav-links li a:link,
@@ -152,7 +156,9 @@
     color: #999;
     border-bottom: 2px solid #555;
   }
-  section p { font-size: 125%; }
+  section p {
+    font-size: 125%;
+  }
   section blockquote {
     font-size: 125%;
     margin: 5px 0;
@@ -166,7 +172,9 @@
     max-width: 670px;
     margin: 20px 30px;
     margin-right: 20vw;
+    margin-bottom: 0;
   }
+  .title-text-box h1 { margin-bottom: 0;}
   section div {
     max-width: 800px;
   }
@@ -175,7 +183,9 @@
   }
   .web-header {
     display: flex;
-    max-width: 40vw;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
     justify-self: flex-end;
     align-self: center;
   }
@@ -227,6 +237,7 @@
     align-items: flex-start;
     margin-top: 20px;
     justify-content: space-evenly;
+    text-align: center;
   }
   .routes {
     align-items: center;
@@ -313,8 +324,14 @@
     max-width: 675px;
     margin: 20px 0;
   }
-  .web-2-1 { padding-right: 50px; flex-basis: 50%; }
-  .web-2-2 { padding-left: 50px; flex-basis: 50%; }
+  .web-2-1 {
+    padding-right: 50px;
+    flex-basis: 50%;
+  }
+  .web-2-2 {
+    padding-left: 50px;
+    flex-basis: 50%;
+  }
   .web-about-box {
     padding-top: 0;
     margin-top: 0;
@@ -436,11 +453,11 @@
   }
   .web-contact {
     justify-content: center;
-    flex-basis: 50%; 
+    flex-basis: 50%;
     align-self: flex-start;
     margin-top: 20px;
   }
-  .ff-compose { 
+  .ff-compose {
     flex-basis: 50%;
     margin-left: 0;
   }
@@ -448,7 +465,9 @@
     font-size: 312.5%;
     padding-bottom: 0;
   }
-  .section-contact-us .web-section{ flex-direction: row;}
+  .section-contact-us .web-section {
+    flex-direction: row;
+  }
   /** Footer Section **/
   footer {
     display: flex;
