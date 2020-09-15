@@ -1,3 +1,16 @@
+@media (max-width: 1480px) {
+  .founders { 
+    flex-direction: column;
+    justify-content: center;
+}
+.web-founders { flex-direction: row; }
+.web-img { 
+  margin-top: 33px;
+  margin-left: 33px;
+}
+.web-names figure { margin: 80px 0; }
+}
+
 @media (min-width: 1200px) {
   /*** ReUsable Components ***/
   h1,
@@ -60,16 +73,9 @@
   header {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    min-height: max-content;
     padding: 50px 50px;
     background-color: #000;
-  }
-  .header-img {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    max-width: 80vw;
-    height: auto;
   }
 
   /** Main-nav Section**/
@@ -154,12 +160,12 @@
   }
   /** Main Heading text **/
   .title-text-box {
-    align-self: flex-start;
+    align-self: center;
     align-items: flex-start;
-    justify-self: flex-start;
     text-align: left;
     max-width: 670px;
     margin: 20px 30px;
+    margin-right: 20vw;
   }
   section div {
     max-width: 800px;
@@ -169,7 +175,7 @@
   }
   .web-header {
     display: flex;
-    max-width: 1200px;
+    max-width: 40vw;
     justify-self: flex-end;
     align-self: center;
   }
@@ -185,13 +191,13 @@
   section {
     flex-direction: row;
     padding: 40px 80px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .web-section {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1600px;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .section-vision {
     flex-direction: column;
@@ -200,8 +206,9 @@
     margin-left: 0;
   }
   .section-mobile-app img {
-    max-width: 280px;
-    margin: 0 auto;
+    max-width: 17vw;
+    margin-left: 100px;
+    align-self: flex-end;
   }
   .section-my-trip {
     flex-direction: column;
@@ -222,19 +229,19 @@
     justify-content: space-evenly;
   }
   .routes {
-    align-items: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
   .routes ul li {
     padding: 10px;
     line-height: 130%;
   }
   .trip {
-    text-align: left;
+    text-align: center;
     max-width: 1600px;
     margin-top: 100px;
     padding: 20px 0;
-    align-self: flex-start;
-    margin-left: 50px;
   }
   .trip h2,
   .trip h3 {
@@ -251,7 +258,7 @@
     margin: 30px 0;
   }
   .destinations-anim img {
-    max-width: 20vw;
+    max-width: 17vw;
     margin-right: 50px;
   }
   .destinations-anim h3 {
@@ -272,11 +279,14 @@
   .section-about-us {
     flex-direction: column;
   }
+  .web-mobile {
+    flex-direction: row;
+  }
   .section-info {
     max-width: 755px;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin-left: 50px;
+    margin-right: 100px;
   }
   .section-info h2,
   .section-info h3 {
@@ -284,7 +294,7 @@
   }
   .section-mobile-app {
     display: flex;
-    justify-content: space-between;
+    justify-items: center;
     align-items: center;
     padding-top: 50px;
   }
@@ -303,9 +313,13 @@
     max-width: 675px;
     margin: 20px 0;
   }
+  .web-2-1 { padding-right: 50px; flex-basis: 50%; }
+  .web-2-2 { padding-left: 50px; flex-basis: 50%; }
   .web-about-box {
     padding-top: 0;
     margin-top: 0;
+    flex-basis: 50%;
+    padding-right: 30px;
   }
   .about-box {
     display: flex;
@@ -332,6 +346,7 @@
   .web-founders {
     margin: 0 auto;
     align-self: center;
+    flex-basis: 50%;
   }
   .mob-img {
     display: none;
@@ -409,21 +424,31 @@
   }
   .investors-content {
     max-width: 1600px;
-    align-self: flex-start;
   }
   .investors-text {
     max-width: 1560px;
   }
   .section-investors h2 {
     font-size: 312.5%;
+    align-self: flex-start;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
-  .section-contact-us {
-    flex-direction: column;
+  .web-contact {
+    justify-content: center;
+    flex-basis: 50%; 
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+  .ff-compose { 
+    flex-basis: 50%;
+    margin-left: 0;
   }
   .section-contact-us h2 {
     font-size: 312.5%;
     padding-bottom: 0;
   }
+  .section-contact-us .web-section{ flex-direction: row;}
   /** Footer Section **/
   footer {
     display: flex;
