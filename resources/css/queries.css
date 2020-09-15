@@ -1,4 +1,4 @@
-@media (max-width: 1480px) {
+@media (max-width: 1480px) and (min-width: 1200px) {
   .founders {
     flex-direction: column;
     justify-content: center;
@@ -141,9 +141,10 @@
   .sticky .company-name {
     color: #000;
   }
-  .sticky .navbar .nav-links {
+  .sticky .nav-links {
     display: flex;
   }
+  .sticky .nav-links li { display: inline-flex;}
   .sticky .nav-links li a:link,
   .sticky .nav-links li a:visited {
     padding: 19px 0;

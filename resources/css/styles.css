@@ -381,6 +381,7 @@ section sub {
   width: 100%;
   margin-top: 20px;
   bottom: 0;
+  align-self: center;
 }
 .section-mobile-app p {
   margin: 5px 0;
@@ -611,7 +612,6 @@ section sub {
 .section-investors h2 {
   font-size: 125%;
   align-self: flex-start;
-  margin-left: 20px;
   margin-top: 10px;
 }
 .investors-content {
