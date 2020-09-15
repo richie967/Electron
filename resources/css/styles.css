@@ -82,7 +82,8 @@ a:visited {
 }
 
 /** Logos **/
-.logo {
+a:link .logo,
+a:visited .logo {
   max-height: 50px;
   width: auto;
   padding: 1px;

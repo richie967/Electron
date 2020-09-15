@@ -8,7 +8,6 @@ $(document).ready(function () {
             $("nav").addClass("sticky");
         } else {
             $("nav").removeClass("sticky");
-            $("nav").removeClass("nav-open");
         }
         lastScroll = scroll;
     });
