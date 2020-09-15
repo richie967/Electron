@@ -19,7 +19,7 @@ $(document).ready(function () {
         if (top_offset === 0)
             $('nav').removeClass('sticky');
             $("nav").removeClass("nav-open");
-            nav.css('display: block');
+            
     });
 
     /* Mobile Navigation */
@@ -29,6 +29,7 @@ $(document).ready(function () {
 
         $(this).toggleClass('open');
         $("nav").toggleClass("nav-open");
+        logo.css('display: block;')
         nav.slideToggle(300);
     });
 
