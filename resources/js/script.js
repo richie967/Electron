@@ -21,6 +21,7 @@ $(document).ready(function () {
             $('nav').removeClass('sticky');
             $("nav").removeClass("nav-open");
             $('.js--nav-icon').removeClass('open');
+            nav.css('display: none;');
             
     });
 
