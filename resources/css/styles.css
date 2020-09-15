@@ -89,14 +89,16 @@ a:visited .logo {
   padding: 1px;
   margin: 10px;
 }
-.logo-black {
+a:link .logo-black,
+a:visited .logo-black {
   display: none;
   max-height: 50px;
   padding: 1px;
   width: auto;
   margin: 10px;
 }
-.logo-white {
+a:link .logo-white,
+a:visited .logo-white {
   display: none;
   max-height: 50px;
   padding: 1px;
