@@ -1,0 +1,456 @@
+@media (min-width: 1200px) {
+  /*** ReUsable Components ***/
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 312.5%;
+  }
+  h2 {
+    font-size: 312.5%;
+    color: #888;
+  }
+  h3 {
+    font-size: 312.5%;
+    color: #075e68;
+  }
+  h4 {
+    font-size: 156.25%;
+  }
+
+  /** Paragrapgh and link styles **/
+  p {
+    font-size: 100%;
+    line-height: 145%;
+    letter-spacing: 0;
+    padding: 5px 0;
+    font-weight: 400;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #707070;
+    border: none;
+  }
+
+  .btn:link,
+  .btn:visited {
+    display: block;
+    background-color: #075e68;
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+    font-size: 193.75%;
+    transition: all 0.3s ease;
+  }
+  .btn:hover,
+  .btn:active {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  /** Header Section & Nav **/
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 50px 50px;
+    background-color: #000;
+  }
+  .header-img {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    max-width: 80vw;
+    height: auto;
+  }
+
+  /** Main-nav Section**/
+  nav {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    z-index: 9999;
+    animation: fadeIn 1s ease-in;
+  }
+  .company-name {
+    display: flex;
+    justify-self: flex-start;
+    font-size: 130%;
+    margin-right: auto;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  .mobile-nav-icon {
+    display: none;
+  }
+
+  /** Nav links **/
+  .nav-links {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-self: center;
+  }
+  .nav-links li {
+    display: flex;
+    padding: 20px 30px;
+    text-transform: uppercase;
+  }
+  .nav-links li a:link,
+  .nav-links li a:visited {
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+  }
+  .nav-links li a:hover,
+  .nav-links li a:active {
+    color: #fff;
+  }
+  .sticky {
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    background-color: rgba(231, 231, 231, 0.801);
+    box-shadow: 0 2px 2px #b9b9b9;
+    z-index: 9999;
+  }
+  .sticky .company-name {
+    color: #000;
+  }
+  .sticky .nav-links {
+    display: flex;
+  }
+  .sticky .nav-links li a:link,
+  .sticky .nav-links li a:visited {
+    padding: 19px 0;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s ease-in-out;
+  }
+  .sticky .nav-links li a:hover,
+  .sticky .nav-links li a:active {
+    color: #999;
+    border-bottom: 2px solid #555;
+  }
+  section p,
+  section blockquote {
+    font-size: 125%;
+  }
+  /** Main Heading text **/
+  .title-text-box {
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-self: flex-start;
+    text-align: left;
+    max-width: 670px;
+    margin: 20px 30px;
+  }
+  section div {
+    max-width: 800px;
+  }
+  section ul li {
+    font-size: 100%;
+  }
+  .web-header {
+    display: flex;
+    max-width: 1200px;
+    justify-self: flex-end;
+    align-self: center;
+  }
+  header {
+    overflow: hidden;
+  }
+  .header-img {
+    display: none;
+  }
+  video {
+    max-width: 30vw;
+  }
+  section {
+    flex-direction: row;
+    padding: 40px 80px;
+    justify-content: space-between;
+  }
+  .web-section {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1600px;
+    justify-content: space-evenly;
+  }
+  .section-vision {
+    flex-direction: column;
+  }
+  .section-our-vision {
+    margin-left: 0;
+  }
+  .section-mobile-app img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .section-my-trip {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-my-trip div {
+    max-width: 1600px;
+  }
+  .routes,
+  .routes p {
+    font-size: 100%;
+  }
+  .routes ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  .routes {
+    align-items: flex-start;
+  }
+  .routes ul li {
+    padding: 10px;
+    line-height: 130%;
+  }
+  .trip {
+    text-align: left;
+    max-width: 1600px;
+    margin-top: 100px;
+    padding: 20px 0;
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+  .trip h2,
+  .trip h3 {
+    padding: 0;
+  }
+  section h1,
+  section h2,
+  section h3,
+  section h4 {
+    max-width: 1600px;
+  }
+  .destinations-anim {
+    display: flex;
+    margin: 30px 0;
+  }
+  .destinations-anim img {
+    max-width: 20vw;
+    margin-right: 50px;
+  }
+  .destinations-anim h3 {
+    align-self: center;
+    max-width: 600px;
+    margin-left: 123px;
+  }
+  .cert {
+    font-size: 100%;
+  }
+  .about-us-info {
+    max-width: 1600px;
+  }
+  .about-us-info .web-section {
+    flex-direction: column;
+    max-width: 1600px;
+  }
+  .section-about-us {
+    flex-direction: column;
+  }
+  .section-info {
+    max-width: 755px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 50px;
+  }
+  .section-info h2,
+  .section-info h3 {
+    padding: 5px 0;
+  }
+  .section-mobile-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .web-1 {
+    justify-content: space-between;
+  }
+  .section-electron-5 {
+    justify-content: space-evenly;
+  }
+  .electron-5-info h2,
+  .electron-5-info h3 {
+    padding: 5px 0;
+  }
+  .web-2 {
+    padding-top: 20px;
+    max-width: 675px;
+    margin: 20px 0;
+  }
+  .web-about-box {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .about-box {
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  section sub {
+    font-size: 75%;
+  }
+  .team-web {
+    background-color: #fff;
+    padding-left: 20px;
+  }
+  .team-header {
+    text-transform: none;
+    font-size: 125%;
+  }
+  .about-us-info h3 {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .web-founders {
+    margin: 0 auto;
+    align-self: center;
+  }
+  .mob-img {
+    display: none;
+  }
+  .web-img {
+    display: block;
+    max-width: 185px;
+    height: auto;
+    margin-right: 33px;
+  }
+  .names {
+    display: flex;
+    width: 100%;
+    max-width: 675px;
+    justify-content: space-between;
+    font-size: 120%;
+  }
+  .names figure {
+    flex-basis: 33%;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  .section-sign-up {
+    justify-content: center;
+    font-size: 156.25%;
+  }
+  .section-sign-up a:link,
+  .section-sign-up a:visited {
+    color: var(--accent-color);
+    text-shadow: 1px 2px 7px #555;
+    font-weight: 500;
+  }
+  .btn-career:link,
+  .btn-career:visited {
+    color: #fff;
+    background-color: #fff;
+    font-size: 75%;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+  .web-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    margin: 0 auto;
+  }
+  .economic-info {
+    max-width: 1600px;
+  }
+  .slides {
+    justify-content: space-evenly;
+  }
+  .slider {
+    max-width: 1780px;
+  }
+  .slides > div {
+    margin-right: 10px;
+  }
+  .economic-benefits h2 {
+    font-size: 312.5%;
+  }
+  .section-ambition {
+    flex-direction: column;
+  }
+  .section-ambition h4 {
+    max-width: 1860px;
+    padding: 5px;
+  }
+  .section-investors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .investors-content {
+    max-width: 1600px;
+    align-self: flex-start;
+  }
+  .investors-text {
+    max-width: 1560px;
+  }
+  .section-investors h2 {
+    font-size: 312.5%;
+  }
+  .section-contact-us {
+    flex-direction: column;
+  }
+  .section-contact-us h2 {
+    font-size: 312.5%;
+    padding-bottom: 0;
+  }
+  /** Footer Section **/
+  footer {
+    display: flex;
+    background: #075e68;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 20vh;
+  }
+  footer ul {
+    list-style: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 125%;
+  }
+  .links li {
+    margin: 0 30px;
+  }
+  .links li a:link,
+  .links li a:visited {
+    color: #fff;
+    transition: opacity 0.3s ease 0s;
+  }
+  .links li a:hover,
+  .links li a:active {
+    opacity: 0.6;
+  }
+}

@@ -1,33 +1,389 @@
 <!DOCTYPE html>
-<html lang="en-US" >
+<html lang="en">
+
+<head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
   <script src="https://kit.fontawesome.com/118b47f581.js" crossorigin="anonymous"></script>
+
   <title>Electron Aviation</title>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
-  <link rel="canonical" href="https://www.electronaviation.com/">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- <link rel="canonical" href="https://www.electronaviation.com/">
   <meta property="og:site_name" content="Electron Aviation">
   <meta property="og:title" content="Electron Aviation">
   <meta property="og:url" content="https://www.electronaviation.com">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" type="text/css" href="assets/site.css">
-<head>
-
+   -->
 </head>
+
 <body>
   <header>
-    <nav>
-    <img src="assets/img/Electron-Aviation-Icon.png" alt="Electron Aviation Company Logo" class="logo"> 
-    <h1 class="company-name">Electron Aviation</h1>
+    <nav id="scrollTop">
+      <img src="assets/logo/black-logo.png" alt="Electron Aviation Company Logo" class="logo-black js--logo">
+      <img src="assets/logo/logo-white.png" alt="Electron Aviation Company Logo white" class="logo-white js--logo">
+      <img src="assets/logo/electron-aviation-logo2.png" alt="Electron Aviation Company Logo" class="logo js--logo">
+      <h1 class="company-name">Electron Aviation</h1>
+      <ul class="nav-links js--nav-links">
+        <li><a href="#vision">Our Vision</a></li>
+        <li><a href="#airtaxi">Air Taxi</a></li>
+        <li><a href="#electron-5">Electron 5</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#investors">Investment</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+      <div class="mobile-nav-icon js--nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-
+    <img src="assets/images/header-render4k.png" alt="Front view render of aircraft Electron 5"
+      class="header-img js--wp-1">
     <div class="title-text-box">
-      <h1>zero emissions, coming soon!</h1>
-      <a class="btn btn-contact" href="contact.html">Contact Us</a>
+      <h1>zero emissions low cost regional air travel</h1>
+      <a class="btn btn-contact js--btn-contact" href="#vision">Read More</a>
     </div>
-
+    <img src="assets/images/header-render4k.png" alt="Front view render of aircraft Electron 5" class="web-header">
   </header>
+
+  <section class="section-vision" id="vision">
+    <div class="web-section web-1">
+      <video autoplay loop muted preload="auto" poster="assets/images/preview-2.png">
+        <source src="assets/animations/g-render.mp4" type="video/mp4">
+        <source src="assets/animations/g-render-m.webm" type="video/webm">
+        This browser does not display video tag.
+      </video>
+      <div class="section-our-vision js--vision">
+        <h3><span>Our Vision</span><br>a truly sustainable regional air mobility network.</h3>
+        <p>Currently the global aviation industry is 99.9% reliant on burning fossil fuels producing significant amounts
+          of emissions. The future path of global warming heavily depends on Carbon neutral transport systems. Domestic
+          air travel in the UK is currently limited to around 40 airports with only a small number of commercially
+          viable
+          routes.</p>
+        <p>The Electron 5 aircraft has ZERO emissions. It&apos;s unique capabilities enable an additional 700 existing
+          general aviation airports to be utilised. Combined with an order of magnitude reduction in operating costs
+          this
+          greatly increases the number of commercially viable routes.</p>
+      </div>
+    </div>
+    <div class="destinations-anim section-our-vision web-section">
+      <h3><span>700 uk destinations</span><br>500,000+ NEW <span class="lower">possible domestic routes</span></h3>
+      <img src="assets/animations/re-render.gif" alt="Possible destinations for the UK animation" class="js--wp-5">
+      <ul class="destination-colors">
+        <li><i class="fas fa-circle list-icon icon-current"></i>Current destinations</li>
+        <li><i class="fas fa-circle list-icon icon-new"></i>New destinations</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-mobile-app" id="airtaxi">
+    <div class="section-info">
+      <h2>regional air mobility</h2>
+      <h3>summon an air taxi</h3>
+      <p>A Fleet of Electron 5 aircraft will help drive the UK&apos;s economic growth by providing sustainable regional
+        air mobility in the UK and beyond.</p>
+      <p>With a range of over 400 Miles, the Electron 5 can take you anywhere inside the UK and into Europe, avoiding
+        busy motorways and saving you time.</p>
+      <ul>
+        <li><i class="fas fa-piggy-bank list-icon"></i>Ultra low operating/ passenger costs</li>
+        <li><i class="fas fa-plane-departure list-icon"></i>Utilising existing infrastructure for take off and landing
+        </li>
+        <li><i class="fas fa-globe-europe list-icon"></i>Operating from 700+ UK General Aviation airports</li>
+        <li><i class="fas fa-route list-icon"></i>500.000+ NEW possible routes</li>
+        <li><i class="fas fa-user-shield list-icon"></i>Smaller number of people per vehicle (Covid-19)</li>
+        <li><i class="fas fa-fighter-jet list-icon"></i>Faster than road, rail or sea transportation</li>
+      </ul>
+      <sub>*Including all estimated operating costs</sub>
+      <p class="app-install">Install the App, and hail a plane!</p> <sub>(Image shows example app)</sub>
+    </div>
+    <img src="assets/images/app2.png" alt="iPhone screen example of app" class="js--wp-3">
+  </section>
+
+  <section class="section-my-trip">
+    <div class="trip">
+      <h2>my trip</h2>
+      <h3>Compared with other modes of transport</h3>
+    </div>
+    <div class="routes">
+      <ul>
+        <li><span>Bristol to Brussels</span> Distance - 489km 304miles<br>
+          Driving time: 7hrs 21min (requires Eurotunnel or Ferry)<br>
+          Flying time: 1hrs 57min (+14min drive)<br>
+          Fare &pound;42*</li>
+        <li><span>Belfast to Birmingham</span> Distance - 355km 220miles<br>
+          Driving time: 7hrs 56min (requires a ferry)<br>
+          Flying time: 1hrs 25min (+21min drive)<br>
+          Fare &pound;30*</li>
+        <li><span>Cardiff to Eindhoven</span> Distance - 600km 373miles<br>
+          Driving time: 9hrs 11min (requires Eurotunnel or Ferry)<br>
+          Flying time: 2hrs 24min (+15min drive)<br>
+          Fare &pound;51*</li>
+        <li><span>London to Newquay</span> Distance - 353km 219miles<br>
+          Driving time: 5hrs 14min<br>
+          Flying time: 1hrs 25min (+18min drive)<br>
+          Fare &pound;30*</li>
+        <li><span>Portsmouth to Paris</span> Distance - 328km 204miles<br>
+          Driving time: 7hrs 2min (requires Eurotunnel or Ferry)<br>
+          Flying time: 1hrs 19min (+27min drive)<br>
+          Fare &pound;28*</li>
+      </ul>
+      <p>(*Price per passenger, based on &pound;0.55 per mile and 4 seats)</p>
+    </div>
+  </section>
+
+  <section class="section-electron-5 js--electron-5" id="electron-5">
+    <div class="electron-5">
+      <img src="assets/images/r-side-view-v2.0.png" alt="Electric aircraft prototype" class="js--wp-2">
+    </div>
+    <div class="electron-5-info">
+      <h2>electron 5</h2>
+      <h3>A next generation all electric 5 seater aircraft</h3>
+      <p>The only 5 seater fixed wing battery powered aircraft in the world. Designed to utilize today's battery
+        technology in combination with cutting edge aerodynamics.</p>
+      <ul>
+        <li><i class="fas fa-wind list-icon"></i>High aerodynamic efficiency due to laminar flow</li>
+        <li><i class="fas fa-exchange-alt list-icon"></i>Range: 400NM / 750km</li>
+        <li><i class="fas fa-tachometer-alt list-icon"></i>Cruise Speed: 155mph / 250 km/h</li>
+        <li><i class="fas fa-ruler list-icon"></i>Takeoff Distance: &lt; 400m</li>
+        <li><i class="fas fa-charging-station list-icon"></i>Minimal investment for charging facilities</li>
+        <li><i class="fas fa-volume-mute list-icon"></i>Low noise</li>
+        <li><i class="fas fa-user-slash list-icon"></i>Pilotless operation ready</li>
+        <li><i class="fas fa-check-double list-icon"></i>Fully CAA/EASA/FAA approved*</li>
+      </ul>
+      <p class="cert">* Electron will work with regulators to achieve certification.</p>
+    </div>
+  </section>
+  <section class="section-about-us" id="about">
+
+    <div class="about-us-info">
+      <div class="web-section">
+        <h2>About Us</h2>
+        <h3>Our mission is to make carbon neutral aviation a reality in the near term. We&apos;re doing this by driving
+          electric propulsion innovation upwards</h3>
+        <div class="about-box">
+          <div class="web-2">
+            <blockquote>&quot;We won&apos;t settle for anything less than a sustainable future.&quot;</blockquote>
+            <p>The UK based company was founded in 2020 by Josef Mouris and Richard Blackwell. We are located in England
+              and
+              Wales.</p>
+            <blockquote>&quot;We reward innovation and accept the associated risks&quot;.</blockquote>
+            <p>Our product development and production methods will leverage the best leading edge technology has to
+              offer.
+              In
+              addition to this, to make future autonomous operation possible we will be working with leading AI
+              developers.
+            </p>
+          </div>
+          <div class="web-2">
+            <blockquote>&quot;We participate in collaboration to promote the transfer of knowledge and skill.&quot;
+            </blockquote>
+            <p>Lastly, Electron Aviation would like to partner with SETsquared in the development of a next generation
+              all
+              electric aircraft. Students will be able to acquire hands-on experience working on a real product with the
+              prospect
+              of future employment with Electron Aviation. The various sub projects will range from strength
+              calculations,
+              vibration & noise mitigation all the way to aerodynamic design and analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="web-section team-web">
+        <h2 class="team">The Team</h2>
+        <h3 class="team-header">We beleive that motivation comes from ambition</h3>
+        <div class="about-box web-about-box">
+          <div class="web-2 web-about-box">
+            <p>Josef is an ex Flybe pilot with over 15 years experience. Josef has been working with a reputable
+              aircraft
+              manufacturer to design a more efficient propeller. A prototype of which has successfully flown in 2019.
+            </p>
+            <p>Richard is an experienced problem solver with an eye for detail and the ability to see the bigger
+              picture.
+              Richard has strong leadership skills with an extensive background in managing high performance teams of
+              digital
+              engineers.</p>
+            <p>James Ketchell is a serial adventurer, world record holder, inspirational public speaker, author and
+              pilot.
+              He
+              brings a wealth of experience, contacts and drive to the team. He will be flying a prototype aeroplane
+              around
+              the world in 2024.</p>
+            <blockquote>&quot;<i>We believe that we should do what we are good at or wish to progress in.</i>&quot;
+            </blockquote>
+            <p>We are a small agile startup with experience in Aerodynamics, Design, CAD, Piloting, Rapid Prototyping,
+              Agile
+              Project Management, Requirements Gathering, Digital Prototyping, UX, Accessibility, Rapid Data Gathering
+              and
+              Mapping, Fundraising, Leadership and Management, Digital Marketing, Workshop Facilitation.</p>
+          </div>
+          <div class="web-2 web-founders">
+            <div class="founders js--wp-4">
+              <img src="assets/images/richard-blackwell.png" alt="Richard Blackwell in the airport" class="mob-img">
+              <img src="assets/images/josef-mouris.png" alt="Joesf Mouris sitting in a pilots seat" class="mob-img">
+              <img src="assets/images/james-ketchall.png" alt="James Ketchall wearing glasses in an airfield"
+                class="mob-img">
+              <img src="assets/images/richard-blackwell-web.png" alt="Richard Blackwell in the airport" class="web-img">
+              <img src="assets/images/josef-mouris-web.png" alt="Joesf Mouris sitting in a pilots seat" class="web-img">
+              <img src="assets/images/james-ketchall-web.png" alt="James Ketchall wearing glasses in an airfield"
+                class="web-img">
+            </div>
+            <div class="names founders">
+              <figure>Richard Blackwell Co Founder / Director</figure>
+              <figure>Josef Mouris Co Founder / Director</figure>
+              <figure>James Ketchall Pilot</figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/branch-leaves.png" alt="image of green leaves on a branch" class="leaves-img">
+  </section>
+
+  <section class="section-sign-up">
+    <h4>are you interested in a career in sustainable aviation</h4>
+    <a class="btn btn-career" href="#economy">Read More</a>
+  </section>
+
+  <section class="economic-benefits" id="economy">
+    <div class="about-box web-about">
+      <div class="economic-info">
+        <h2>Economic Benefits</h2>
+        <p>The global transition to clean technologies presents us with a real opportunity. Creating jobs in the
+          aerospace
+          manufacturing industry and stimulating growth in the aviation transport sector.</p>
+        <blockquote>&quot;We believe in vertical integration as a means to reduce environmental impact.&quot;
+        </blockquote>
+        <p>Existing regional air transport has been struggling to be profitable in recent times due to low profit
+          margins.
+          Our electric aircraft will see a step change in operating cost reduction facilitating an increased profit
+          margin
+          and revitalising this industry.</p>
+        <p>If you are in a position to help, <a href="#contact-us">get in touch!</a></p>
+      </div>
+      <div class="slider quotes-carousel">
+        <div class="slides">
+          <div id="slide-1">
+            <p>From the Aerospace Sector Deal;<br>
+            <blockquote><i>&apos;Environmentally friendly aircraft will increasingly incorporate
+                electric technologies, and we anticipate more aircraft operating autonomously in the future. New markets
+                for
+                drones and Urban Air Mobility vehicles will be developed. We want the UK to be at the cutting edge of
+                these
+                exciting developments much as we were when Sir Frank Whittle developed the world&apos;s first jet
+                engine.&apos;</i></blockquote>
+            </p>
+          </div>
+          <div id="slide-2">
+            <p>From the Future Flight Challenge;<br>
+            <blockquote><i>&apos;The UK has played a leading role in aviation over the last 100
+                years and is well-placed to take advantage of a new generation of aircraft that could help to ease
+                congestion
+                and reduce the carbon footprint of the industry.&apos;</i></blockquote>
+            </p>
+          </div>
+          <div id="slide-3">
+            <p>Business Minister Nadhim Zahawi said;<br>
+            <blockquote><i>&apos;The UK has a proud heritage and enviable worldwide reputation
+                for advances in aviation technology. The electrification of flight has the potential to revolutionise
+                the
+                way
+                we travel and transform aviation for decades to come – ensuring we can travel worldwide while
+                maintaining
+                a
+                low carbon footprint.&apos;</i></blockquote>
+            </p>
+          </div>
+          <div id="slide-4">
+            <p>From the ATI ACCELERATING AMBITION Technology Strategy 2019;<br>
+            <blockquote><i>&apos;By 2030, we expect to see the
+                emergence of entirely new aviation markets in the sub-regional and urban environments. Rethinking
+                aircraft
+                and
+                associated ground and air operations in the sub-regional context could bring substantial mobility
+                benefits
+                and
+                lower environmental impact.&apos;</i></blockquote>
+            </p>
+          </div>
+          <div id="slide-5">
+            <p>From the Aerospace Sector Deal;<br>
+            <blockquote>&apos;Boosting innovation through a joint industry and government
+              investment in the Future Flight challenge, with up to &pound;125 million of funding from the Industrial
+              Strategy Challenge Fund, which industry will match. This programme will invest in developing demonstrators
+              of
+              new aircraft (such as drones and other electric aircraft), new models of airspace management, new
+              approaches
+              to ground support infrastructure and new markets for aircraft in local areas.&apos;</blockquote>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-ambition">
+    <h4>"By 2030, we expect to see the emergence of entirely new aviation markets in the sub-regional and urban
+      environments"</h4>
+    <h4><i>ati, accelerating ambition</i></h4>
+  </section>
+
+  <section class="section-investors" id="investors">
+    <h2>Investors</h2>
+    <div class="investors-content">
+      <div class="investors-text">
+        <p>This is a high growth business, we project a sales revenue of &pound;1.1 Billion in 2035 with a potential
+          operator revenue of &pound;2 Billion in the UK alone.</p>
+        <blockquote>&quot;With just one passenger we can achieve price parity to rail travel in the UK.&quot;
+        </blockquote>
+        <p>Our initial entry into the market will be private aircraft owners, expanding to air taxi services. The demand
+          for green modes of transport has grown significantly over the last 10 years. Together with the massive
+          decrease in cost of batteries, we believe this is the right time to start manufacturing high efficiency
+          electric aircraft.</p>
+
+        <p>Key financial figures include, a base price of &pound;450,000. This is competitive with other 4 seater twin
+          or single engine light aircraft with similar range and speed. In summary, our goal is to manufacture, certify
+          and sell our first aircraft by 2025 (Phase 1-3).</p>
+        <p>We are currently seeking investment for Phase 1, a full size prototype propulsion system and a flying scale
+          model. We will then quickly advance to Phase 2, demonstrating our vision with a full size flying prototype.
+        </p>
+        <p>If this exciting opportunity resonates with you, <a href="#">get in touch!</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-contact-us" id="contact-us">
+    <h2>Contact Us</h2>
+    <p>Please use the form to send us a message, we would like to hear from you, whether you are simply interested in
+      sustainable aviation, investing in our project, or anything else...</p>
+      <div id="ff-compose"></div>
+  </section>
+
+  <footer>
+    <ul class="links">
+      <li><a href="#vision">Our Vision</a></li>
+      <li><a href="#airtaxi">Air Taxi</a></li>
+      <li><a href="#electron-5">Electron 5</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#investors">Investment</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+    <img src="assets/logo/electron-aviation-logo2.png" alt="Footer company logo" class="logo">
+  </footer>
+
+  <script async defer src="https://formfacade.com/include/115023965576437680533/form/1FAIpQLSdGA2EsByySSafG8_nGYe5IO5wUmRT3rjyIgYKRrjQN2WRdSg/classic.js?div=ff-compose"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
+
 </body>
+
 </html>
