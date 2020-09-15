@@ -15,9 +15,11 @@ $(document).ready(function () {
     /* Remove sticky nav on scroll to top */
     $(window).scroll(function () {
         var top_offset = $(window).scrollTop();
+        nav = $('.js--nav-links');
         if (top_offset === 0)
             $('nav').removeClass('sticky');
             $("nav").removeClass("nav-open");
+            nav.slideToggle(300);
     });
 
     /* Mobile Navigation */
