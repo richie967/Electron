@@ -7,12 +7,14 @@ $(document).ready(function () {
         if (lastScroll - scroll > 0) {
             $("nav").addClass("sticky");
             $('.js--nav-icon').removeClass('open');
+            $('nav').css('display: none;');
         } else {
             $("nav").removeClass("sticky");
             $('.js--nav-icon').removeClass('open');
         }
         lastScroll = scroll;
     });
+
     /* Remove sticky nav on scroll to top */
     $(window).scroll(function () {
         var top_offset = $(window).scrollTop();
