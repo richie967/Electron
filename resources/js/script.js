@@ -38,7 +38,7 @@ $(document).ready(function () {
         if (icon.hasClass('open')); {
             icon.removeClass('open');
             $("nav").removeClass("nav-open");
-            $("nav").removeClass("sticky");
+            
             nav.slideToggle(300);
         }
     });
