@@ -6,6 +6,7 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
         if (lastScroll - scroll > 0) {
             $("nav").addClass("sticky");
+            nav.slideToggle(300);
         } else {
             $("nav").removeClass("sticky");
             $("nav").removeClass("nav-open");
