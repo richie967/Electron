@@ -6,8 +6,10 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
         if (lastScroll - scroll > 0) {
             $("nav").addClass("sticky");
+            $('.js--nav-icon').removeClass('open');
         } else {
             $("nav").removeClass("sticky");
+            $('.js--nav-icon').removeClass('open');
         }
         lastScroll = scroll;
     });
@@ -18,6 +20,7 @@ $(document).ready(function () {
         if (top_offset === 0)
             $('nav').removeClass('sticky');
             $("nav").removeClass("nav-open");
+            $('.js--nav-icon').removeClass('open');
             
     });
 

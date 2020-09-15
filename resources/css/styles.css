@@ -292,8 +292,10 @@ nav {
 .sticky .logo {
   display: none;
 }
-.sticky .logo-white { display: none;}
-.sticky .logo-black {
+.sticky a:link .logo-white,
+.sticky a:visited .logo-white { display: none;}
+.sticky a:link .logo-black,
+.sticky a:visited .logo-black {
   display: block;
 }
 .sticky .nav-links li a {
