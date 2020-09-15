@@ -16,7 +16,6 @@ $(document).ready(function () {
         var top_offset = $(window).scrollTop();
         if (top_offset === 0)
             $('nav').removeClass('sticky');
-        $("nav").removeClass("nav-open");
     });
 
     /* Mobile Navigation */
