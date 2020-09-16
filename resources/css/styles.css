@@ -172,6 +172,7 @@ section blockquote {
   font-size: 75%;
   letter-spacing: 0;
   font-weight: 400;
+  padding: 5px 0;
 }
 /* Section Lists */
 section ul li {
@@ -224,6 +225,9 @@ nav {
   align-self: center;
   margin: 50px 20px;
   max-width: 80vw;
+}
+.title-text-box .web-head {
+  display: none;
 }
 .btn-contact {
   margin-top: 30px;
@@ -521,9 +525,13 @@ section sub {
 }
 
 /* Economy Benefits Section */
-.section-contact-us h2,
-.economic-benefits h2 {
+.section-contact-us h2 {
   font-size: 125%;
+}
+.economic-benefits h2,
+.section-investors h2 {
+  font-size: 125%;
+  margin-bottom: 5px;
 }
 .economic-benefits blockquote {
   font-style: italic;
@@ -535,7 +543,7 @@ section sub {
   text-transform: none;
 }
 .economic-info {
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 /* ATI Section */
 .section-ambition {
@@ -623,7 +631,6 @@ section sub {
 
 /* Investors Section */
 .section-investors h2 {
-  font-size: 125%;
   align-self: flex-start;
 }
 .investors-content {
@@ -645,13 +652,6 @@ section sub {
 .section-contact-us p,
 .section-contact-us h2 {
   align-self: flex-start;
-  margin-top: 15px;
-  padding: 5px 20px;
-}
-iframe {
-  padding: 5px;
-  width: 100%;
-  min-height: 1239px;
 }
 
 /* Footer */

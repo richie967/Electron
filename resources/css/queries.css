@@ -69,7 +69,7 @@
   }
   .btn:hover,
   .btn:active {
-    transform: scale(1.1);
+    transform: scale(1.01);
     opacity: 0.8;
   }
 
@@ -78,8 +78,9 @@
     display: flex;
     justify-content: space-between;
     min-height: max-content;
-    padding: 50px 50px;
+    padding: 100px;
     background-color: #000;
+    padding-top: 50px;
   }
 
   /** Main-nav Section**/
@@ -173,17 +174,20 @@
   }
   /** Main Heading text **/
   .title-text-box {
-    align-self: flex-start;
-    align-items: flex-start;
-    text-align: left;
+    align-self: center;
+    align-items: center;
+    text-align: center;
     max-width: 670px;
-    margin: 20px 30px;
-    margin-right: 20vw;
-    margin-bottom: 0;
     z-index: 9;
   }
   .title-text-box h1 {
+    display: none;
     margin-bottom: 0;
+  }
+  .title-text-box .web-head {
+    display: block;
+    max-width: 600px;
+    opacity: 0.6;
   }
   section div {
     max-width: 800px;
@@ -230,13 +234,22 @@
   }
   .section-vision {
     flex-direction: column;
+    padding-bottom: 50px;
   }
   .section-our-vision {
     margin-left: 0;
   }
+  .section-our-vision h3 {
+    max-width: 675px;
+    margin-bottom: 90px;
+  }
+  .section-our-vision p {
+    max-width: 675px;
+  }
   .section-mobile-app img {
     max-width: 17vw;
     align-self: center;
+    margin: 0 auto;
   }
   .section-my-trip {
     flex-direction: column;
@@ -258,18 +271,31 @@
     text-align: center;
   }
   .routes {
-    align-items: center;
-    margin: 0 auto;
     margin-bottom: 50px;
   }
   .routes ul li {
-    padding: 10px;
-    line-height: 130%;
+    align-items: flex-start;
+    padding: 8px;
+    line-height: 150%;
+    font-size: 110%;
+    text-align: left;
   }
-
+  .routes ul li span {
+    font-size: 125%;
+    font-weight: 600;
+  }
+  .trip {
+    align-self: flex-start;
+  }
   .trip h2,
   .trip h3 {
     padding: 0;
+  }
+  .web-trip {
+    flex-direction: column;
+  }
+  .section-our-vision .new-routes {
+    max-width: 800px;
   }
   section h1,
   section h2,
@@ -287,8 +313,7 @@
   }
   .destinations-anim h3 {
     align-self: center;
-    max-width: 600px;
-    margin-left: 123px;
+    width: 800px;
   }
   .cert {
     font-size: 100%;
@@ -322,7 +347,6 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    padding-top: 50px;
   }
   .web-1 {
     justify-content: space-between;
@@ -349,12 +373,6 @@
     margin-top: 0;
     flex-basis: 50%;
     padding-right: 30px;
-  }
-  .about-box {
-    display: flex;
-    flex-direction: row;
-    max-width: 1600px;
-    justify-content: space-between;
   }
   section sub {
     font-size: 75%;
@@ -397,11 +415,12 @@
   .section-sign-up {
     justify-content: center;
     font-size: 156.25%;
+    padding: 20px 100px;
   }
   .section-sign-up a:link,
   .section-sign-up a:visited {
     color: var(--accent-color);
-    text-shadow: 1px 2px 7px #555;
+    text-shadow: none;
     font-weight: 500;
   }
   .btn-career:link,
@@ -412,24 +431,49 @@
     padding: 10px 20px;
     margin-left: 30px;
   }
+  .about-box {
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    justify-content: space-between;
+  }
   .web-about {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-basis: 100%;
-  }
-  .economic-info {
     max-width: 1600px;
   }
-  .slides {
-    justify-content: space-evenly;
+  .economic-info {
+    margin: 0;
+    width: 100%;
   }
+  .economic-info p,
+  .economic-info blockquote {
+    max-width: 675px;
+  }
+
   .slider {
-    max-width: 1780px;
+    max-width: 675px;
+    height: 430px;
+    width: 100%;
   }
   .slides > div {
     margin-right: 10px;
+    height: 440px;
+    width: 100%;
+    max-width: 675px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    background: #e9e9e9;
+  }
+  .slides div p {
+    font-size: 20%;
+  }
+  .slides blockquote {
+    font-size: 18%;
+    padding: 5px 10px;
   }
   .economic-benefits {
     justify-content: center;
@@ -452,24 +496,37 @@
   }
   .investors-content {
     max-width: 1600px;
+    width: 100%;
   }
   .investors-text {
-    max-width: 1560px;
+    max-width: 1600px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .web-box {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .web-box p,
+  .web-box blockquote {
+    max-width: 675px;
+    width: 100%;
   }
   .section-investors h2 {
     font-size: 312.5%;
     align-self: flex-start;
     margin-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .web-contact {
     justify-content: flex-start;
     flex-basis: 50%;
     align-self: flex-start;
   }
-  .ff-compose {
+  #ff-compose {
     flex-basis: 50%;
-    margin-left: 0;
+    padding: 0 40px;
   }
   .section-contact-us h2 {
     font-size: 312.5%;
@@ -478,9 +535,12 @@
   .section-contact-us p,
   .section-contact-us h2 {
     padding: 0;
+    max-width: 675px;
+    width: 100%;
   }
   .section-contact-us .web-section {
     flex-direction: row;
+    justify-content: flex-start;
   }
   /** Footer Section **/
   footer {
@@ -505,7 +565,7 @@
   }
   footer a:hover .logo,
   footer a:active .logo {
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
 
   .links {
@@ -515,6 +575,7 @@
     margin: 20px;
     font-size: 200%;
     padding-bottom: 10px;
+    justify-content: center;
   }
   .links li {
     margin: 0 30px;
