@@ -7,7 +7,7 @@ $(document).ready(function () {
         if (lastScroll - scroll > 0) {
             $("nav").addClass("sticky");
             $('.js--nav-icon').removeClass('open');
-            $('nav').css('display: none;');
+            
         } else {
             $("nav").removeClass("sticky");
             $('.js--nav-icon').removeClass('open');
@@ -19,37 +19,45 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var top_offset = $(window).scrollTop();
         nav = $('.js--nav-links');
+        logo = $('.js--logo');
         if (top_offset === 0)
             $('nav').removeClass('sticky');
             $("nav").removeClass("nav-open");
             $('.js--nav-icon').removeClass('open');
-            nav.css('display: none;');
-            
+        
+            $('.logo').removeClass('hide-logo');
+            logo.removeClass('hide-logo');
     });
+    /* test (fix) nav */
 
-    /* Mobile Navigation */
-    $('.js--nav-icon').click(function () {
-        nav = $('.js--nav-links');
-        logo = $('.logo-black');
+    if ($(window).width() <= 1200) {
+        /* Mobile Navigation */
+        $('.js--nav-icon').click(function () {
+            nav = $('.js--nav-links');
+            logo = $('.js--logo');
 
-        $(this).toggleClass('open');
-        $("nav").toggleClass("nav-open");
-        logo.css('display: block;')
-        nav.slideToggle(300);
-    });
-
-    /* Mobile / Sticky Links onClick */
-    $('.js--nav-links li a').on('click', function () {
-        var icon = $('.js--nav-icon');
-        nav = $('.js--nav-links');
-        $('.js--nav-links').slideToggle(300);
-        if (icon.hasClass('open')); {
-            icon.removeClass('open');
-            $("nav").removeClass("nav-open");
+            $(this).toggleClass('open');
+            $("nav").toggleClass("nav-open");
+            logo.css('display: block;')
             nav.slideToggle(300);
-        }
-    });
+            if ($('nav').hasClass('sticky')); {
+                $('.logo').addClass('hide-logo')
+                logo.removeClass('hide-logo')
+            }
+        });
 
+        /* Mobile / Sticky Links onClick */
+        $('.js--nav-links li a').on('click', function () {
+            var icon = $('.js--nav-icon');
+            nav = $('.js--nav-links');
+            nav.slideToggle(300);
+            if (icon.hasClass('open')); {
+                icon.removeClass('open');
+                $("nav").removeClass("nav-open");
+        
+            }
+        });
+    }
     /* FadeIn Animations */
     /* Header Image */
     $('.js--wp-1').waypoint(function (direction) {
