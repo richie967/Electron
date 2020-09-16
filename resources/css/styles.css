@@ -118,6 +118,7 @@ img {
 video {
   display: block;
   max-width: 90%;
+  align-self: center;
 }
 ul {
   list-style: none;
@@ -126,7 +127,6 @@ ul {
 /** List Icon **/
 .list-icon {
   display: inline-block;
-  text-align: center;
   width: 30px;
   color: var(--accent-color);
   font-size: 120%;
@@ -147,6 +147,7 @@ section {
   width: 100%;
   height: auto;
   overflow: hidden;
+  padding: 30px 20px;
 }
 section h1,
 section h2,
@@ -157,7 +158,6 @@ section h4 {
 
 /* Section body (div) */
 section div {
-  margin: 20px;
   display: flex;
   flex-direction: column;
   max-width: 1023px;
@@ -177,13 +177,14 @@ section blockquote {
 section ul li {
   display: flex;
   vertical-align: middle;
-  padding: 5px 0;
-  font-size: 75%;
+  padding: 8px 0;
+  font-size: 70%;
 }
 /* Section List Icons */
 section ul li i {
   display: block;
   padding-right: 10px;
+  margin-right: 5px;
 }
 
 /* Header */
@@ -198,6 +199,7 @@ header {
   align-self: center;
   max-width: 80vw;
   height: auto;
+  max-height: none;
   margin: 20px;
   margin-top: 100px;
 }
@@ -340,10 +342,7 @@ nav {
   margin: 20px 0;
   align-self: center;
 }
-.destinations-anim h3 {
-  align-self: flex-start;
-  margin-left: 20px;
-}
+.destinations-anim h3 { align-self: flex-start; }
 
 .destination-colors {
   display: flex;
@@ -373,8 +372,6 @@ nav {
 .section-my-trip,
 .section-mobile-app {
   background-color: #f2f2f2;
-  padding-bottom: 0;
-  padding-top: 0;
 }
 section sub {
   font-size: 63%;
@@ -388,6 +385,7 @@ section sub {
   margin-top: 20px;
   bottom: 0;
   align-self: center;
+  padding-top: 20px;
 }
 .section-mobile-app p {
   margin: 5px 0;
@@ -397,7 +395,7 @@ section sub {
 }
 /* My Trip Section */
 .trip {
-  margin: 20px 20px;
+  margin-bottom: 20px;
 }
 .routes p {
   font-size: 75%;
@@ -405,15 +403,15 @@ section sub {
 }
 .routes {
   font-size: 75%;
-  margin-left: 0;
-  margin-top: 0;
-  align-items: center;
+  align-self: flex-start;
 }
 .routes li {
   display: flex;
   flex-direction: column;
   justify-content: center;
   opacity: 0.8;
+  font-size: 75%;
+  line-height: 150%;
 }
 .routes ul li span {
   font-weight: 800;
@@ -423,9 +421,7 @@ section sub {
   max-width: 80%;
   margin: 0 auto;
 }
-.electron-5-info {
-  margin-top: 30px;
-}
+
 .cert {
   font-size: 62.5%;
 }
@@ -661,7 +657,8 @@ footer {
 }
 footer .logo {
   max-height: 70px;
-  margin-right: 20px;
+  margin-right: 50px;
+  padding-right: 20px;
 }
 .links {
   display: flex;

@@ -169,13 +169,14 @@
   }
   /** Main Heading text **/
   .title-text-box {
-    align-self: center;
+    align-self: flex-start;
     align-items: flex-start;
     text-align: left;
     max-width: 670px;
     margin: 20px 30px;
     margin-right: 20vw;
     margin-bottom: 0;
+    z-index: 9;
   }
   .title-text-box h1 { margin-bottom: 0;}
   section div {
@@ -183,7 +184,9 @@
   }
   section ul li {
     font-size: 100%;
+    padding: 13px 0;
   }
+  section ul li i { margin-right: 20px;}
   .web-header {
     display: flex;
     width: 100%;
@@ -201,9 +204,10 @@
   video {
     max-width: 30vw;
   }
+  img { height: auto !important;}
   section {
     flex-direction: row;
-    padding: 40px 80px;
+    padding: 100px;
     justify-content: space-evenly;
   }
   .web-section {
@@ -252,10 +256,8 @@
     line-height: 130%;
   }
   .trip {
-    text-align: center;
-    max-width: 1600px;
-    margin-top: 100px;
-    padding: 20px 0;
+    
+    
   }
   .trip h2,
   .trip h3 {
@@ -295,6 +297,8 @@
   }
   .web-mobile {
     flex-direction: row;
+    max-width: 1600px;
+    width: 100%;
   }
   .section-info {
     max-width: 755px;
@@ -350,10 +354,6 @@
   }
   section sub {
     font-size: 75%;
-  }
-  .team-web {
-    background-color: #fff;
-    padding-left: 20px;
   }
   .team-header {
     text-transform: none;
@@ -432,6 +432,7 @@
   }
   .section-ambition {
     flex-direction: column;
+    padding: 20px 0;
   }
   .section-ambition h4 {
     max-width: 1860px;
@@ -458,7 +459,6 @@
     justify-content: center;
     flex-basis: 50%;
     align-self: flex-start;
-    margin-top: 20px;
   }
   .ff-compose {
     flex-basis: 50%;
