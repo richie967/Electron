@@ -209,12 +209,14 @@
     flex-direction: row;
     padding: 100px;
     justify-content: space-evenly;
+    overflow: visible
   }
   .web-section {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1600px;
     justify-content: space-between;
+    width: 100%;
   }
   .section-vision {
     flex-direction: column;
@@ -224,12 +226,12 @@
   }
   .section-mobile-app img {
     max-width: 17vw;
-    margin-left: 100px;
-    align-self: flex-end;
+    align-self: center;
   }
   .section-my-trip {
     flex-direction: column;
     align-items: center;
+
   }
   .section-my-trip div {
     max-width: 1600px;
@@ -255,10 +257,7 @@
     padding: 10px;
     line-height: 130%;
   }
-  .trip {
-    
-    
-  }
+  
   .trip h2,
   .trip h3 {
     padding: 0;
@@ -299,12 +298,13 @@
     flex-direction: row;
     max-width: 1600px;
     width: 100%;
+    height: auto;
   }
   .section-info {
     max-width: 755px;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin-right: 100px;
+    
   }
   .section-info h2,
   .section-info h3 {
@@ -318,9 +318,6 @@
   }
   .web-1 {
     justify-content: space-between;
-  }
-  .section-electron-5 {
-    justify-content: space-evenly;
   }
   .electron-5-info h2,
   .electron-5-info h3 {
@@ -350,10 +347,10 @@
     flex-direction: row;
     max-width: 1600px;
     justify-content: space-between;
-    margin: 20px 0;
   }
   section sub {
     font-size: 75%;
+    display: contents;
   }
   .team-header {
     text-transform: none;
@@ -413,7 +410,6 @@
     align-items: center;
     justify-content: center;
     flex-basis: 100%;
-    margin: 0 auto;
   }
   .economic-info {
     max-width: 1600px;
@@ -427,6 +423,7 @@
   .slides > div {
     margin-right: 10px;
   }
+  .economic-benefits { justify-content: center;}
   .economic-benefits h2 {
     font-size: 312.5%;
   }
@@ -456,7 +453,7 @@
     margin-bottom: 20px;
   }
   .web-contact {
-    justify-content: center;
+    justify-content: flex-start;
     flex-basis: 50%;
     align-self: flex-start;
   }
@@ -468,6 +465,8 @@
     font-size: 312.5%;
     padding-bottom: 0;
   }
+  .section-contact-us p,
+.section-contact-us h2 { padding: 0;}
   .section-contact-us .web-section {
     flex-direction: row;
   }
