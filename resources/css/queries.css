@@ -144,7 +144,9 @@
   .sticky .nav-links {
     display: flex;
   }
-  .sticky .nav-links li { display: inline-flex;}
+  .sticky .nav-links li {
+    display: inline-flex;
+  }
   .sticky .nav-links li a:link,
   .sticky .nav-links li a:visited {
     padding: 19px 0;
@@ -158,7 +160,9 @@
     border-bottom: 2px solid #555;
   }
   .sticky a:link .logo-black,
-  .sticky a:visited .logo-black { margin-left: 30px;}
+  .sticky a:visited .logo-black {
+    margin-left: 30px;
+  }
   section p {
     font-size: 125%;
   }
@@ -178,7 +182,9 @@
     margin-bottom: 0;
     z-index: 9;
   }
-  .title-text-box h1 { margin-bottom: 0;}
+  .title-text-box h1 {
+    margin-bottom: 0;
+  }
   section div {
     max-width: 800px;
   }
@@ -474,7 +480,7 @@
   footer {
     display: flex;
     background: #075e68;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     min-height: 20vh;
@@ -482,6 +488,20 @@
   footer ul {
     list-style: none;
   }
+  footer a:link .logo,
+  footer a:visited .logo {
+    display: inline-block;
+    margin-right: 30px;
+    max-height: 90px;
+    
+    filter: drop-shadow(0 -6mm 4mm #000);
+    transition: transform 0.3s ease-in-out;
+  }
+  footer a:hover .logo,
+  footer a:active .logo {
+    transform: scale(1.1);
+  }
+
   .links {
     display: flex;
     flex-direction: row;

@@ -82,23 +82,23 @@ a:visited {
 }
 
 /** Logos **/
-a:link .logo,
-a:visited .logo {
+nav a:link .logo,
+nav a:visited .logo {
   max-height: 50px;
   width: auto;
   padding: 1px;
   margin: 10px;
 }
-a:link .logo-black,
-a:visited .logo-black {
+nav a:link .logo-black,
+nav a:visited .logo-black {
   display: none;
   max-height: 50px;
   padding: 1px;
   width: auto;
   margin: 10px;
 }
-a:link .logo-white,
-a:visited .logo-white {
+nav a:link .logo-white,
+nav a:visited .logo-white {
   display: none;
   max-height: 50px;
   padding: 1px;
@@ -192,7 +192,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #000;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 .header-img {
@@ -210,6 +210,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+.hide-logo {display: none;}
 .company-name {
   display: none;
 }
@@ -291,7 +292,8 @@ nav {
   background-color: transparent;
   z-index: 9999;
 }
-.sticky .logo {
+.sticky a:link .logo,
+.sticky a:visited .logo {
   display: none;
 }
 .sticky a:link .logo-white,
