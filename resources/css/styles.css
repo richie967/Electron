@@ -210,7 +210,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-.hide-logo {display: none;}
+.hide-logo {
+  display: none;
+}
 .company-name {
   display: none;
 }
@@ -297,7 +299,9 @@ nav {
   display: none;
 }
 .sticky a:link .logo-white,
-.sticky a:visited .logo-white { display: none;}
+.sticky a:visited .logo-white {
+  display: none;
+}
 .sticky a:link .logo-black,
 .sticky a:visited .logo-black {
   display: block;
@@ -344,7 +348,9 @@ nav {
   margin: 20px 0;
   align-self: center;
 }
-.destinations-anim h3 { align-self: flex-start; }
+.destinations-anim h3 {
+  align-self: flex-start;
+}
 
 .destination-colors {
   display: flex;
@@ -371,7 +377,9 @@ nav {
   opacity: 1;
 }
 /* Mobile-App Section */
-.section-my-trip { background-color: #f2f2f2; }
+.section-my-trip {
+  background-color: #f2f2f2;
+}
 .section-mobile-app {
   background-color: #f2f2f2;
   padding-bottom: 0;

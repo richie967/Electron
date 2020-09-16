@@ -192,7 +192,9 @@
     font-size: 100%;
     padding: 13px 0;
   }
-  section ul li i { margin-right: 20px;}
+  section ul li i {
+    margin-right: 20px;
+  }
   .web-header {
     display: flex;
     width: 100%;
@@ -210,12 +212,14 @@
   video {
     max-width: 30vw;
   }
-  img { height: auto !important;}
+  img {
+    height: auto !important;
+  }
   section {
     flex-direction: row;
     padding: 100px;
     justify-content: space-evenly;
-    overflow: visible
+    overflow: visible;
   }
   .web-section {
     display: flex;
@@ -237,7 +241,6 @@
   .section-my-trip {
     flex-direction: column;
     align-items: center;
-
   }
   .section-my-trip div {
     max-width: 1600px;
@@ -263,7 +266,7 @@
     padding: 10px;
     line-height: 130%;
   }
-  
+
   .trip h2,
   .trip h3 {
     padding: 0;
@@ -310,7 +313,6 @@
     max-width: 755px;
     align-items: flex-start;
     justify-content: space-evenly;
-    
   }
   .section-info h2,
   .section-info h3 {
@@ -429,7 +431,9 @@
   .slides > div {
     margin-right: 10px;
   }
-  .economic-benefits { justify-content: center;}
+  .economic-benefits {
+    justify-content: center;
+  }
   .economic-benefits h2 {
     font-size: 312.5%;
   }
@@ -472,7 +476,9 @@
     padding-bottom: 0;
   }
   .section-contact-us p,
-.section-contact-us h2 { padding: 0;}
+  .section-contact-us h2 {
+    padding: 0;
+  }
   .section-contact-us .web-section {
     flex-direction: row;
   }
@@ -493,7 +499,7 @@
     display: inline-block;
     margin-right: 30px;
     max-height: 90px;
-    
+
     filter: drop-shadow(0 -6mm 4mm #000);
     transition: transform 0.3s ease-in-out;
   }
