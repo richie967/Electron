@@ -115,6 +115,9 @@ img {
 .web-img {
   display: none;
 }
+.web-logo {
+  display: none;
+}
 video {
   display: block;
   max-width: 90%;
@@ -161,6 +164,7 @@ section div {
   display: flex;
   flex-direction: column;
   max-width: 1023px;
+  width: 100%;
 }
 
 /* Section Paragraphs Text */
@@ -559,6 +563,17 @@ section sub {
   margin: 0;
   display: flex;
 }
+.team-member {
+  width: 100%; 
+  max-width: 90vw !important;
+  box-shadow: 0px 0px 3px #000;
+  opacity: 0.9;
+  text-align: left;
+  margin: 10px 0;
+}
+
+
+
 /* Carousel *test* */
 
 .slider {

@@ -1,20 +1,14 @@
-@media (max-width: 1480px) and (min-width: 1200px) {
-  .founders {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .web-founders {
-    flex-direction: row;
-  }
-  .web-img {
-    margin-top: 33px;
-    margin-left: 33px;
-  }
-  .web-names figure {
-    margin: 80px 0;
-  }
-}
 
+@media (max-width: 1600px) and (min-width: 1200px) {
+  .web-box {
+    margin-right: 50px;
+  }
+  .economic-info {
+    margin-right: 50px;
+  }
+  .about-box .web-2-1 { margin-right: 50px; }
+  .web-about { margin-right: 50px;}
+}
 @media (min-width: 1200px) {
   /*** ReUsable Components ***/
   h1,
@@ -55,6 +49,7 @@
     text-decoration: none;
     color: #707070;
     border: none;
+    font-weight: 400;
   }
 
   .btn:link,
@@ -64,7 +59,7 @@
     border-radius: 5px;
     position: relative;
     color: #fff;
-    font-size: 193.75%;
+    font-size: 156.25%;
     transition: all 0.3s ease;
   }
   .btn:hover,
@@ -179,6 +174,7 @@
     text-align: center;
     max-width: 670px;
     z-index: 9;
+    margin-top: 100px;
   }
   .title-text-box h1 {
     display: none;
@@ -188,6 +184,7 @@
     display: block;
     max-width: 600px;
     opacity: 0.6;
+    letter-spacing: 1px;
   }
   section div {
     max-width: 800px;
@@ -209,12 +206,19 @@
   }
   header {
     overflow: hidden;
+    padding-bottom: 0;
   }
   .header-img {
     display: none;
   }
+  .btn-contact:link,
+  .btn-contact:visited { 
+    margin-top: 40px;
+    padding: 20px 25px;
+  }
   video {
     max-width: 30vw;
+    margin: 0 auto;
   }
   img {
     height: auto !important;
@@ -241,7 +245,7 @@
   }
   .section-our-vision h3 {
     max-width: 675px;
-    margin-bottom: 90px;
+    margin-bottom: 55px;
   }
   .section-our-vision p {
     max-width: 675px;
@@ -255,6 +259,7 @@
     flex-direction: column;
     align-items: center;
   }
+  .app-install { margin-bottom: 0; padding-bottom: 0;}
   .section-my-trip div {
     max-width: 1600px;
   }
@@ -279,10 +284,12 @@
     line-height: 150%;
     font-size: 110%;
     text-align: left;
+    opacity: 0.7;
   }
   .routes ul li span {
     font-size: 125%;
     font-weight: 600;
+    opacity: 1;
   }
   .trip {
     align-self: flex-start;
@@ -315,11 +322,13 @@
     align-self: center;
     width: 800px;
   }
+  
   .cert {
     font-size: 100%;
   }
   .about-us-info {
     max-width: 1600px;
+    width: 100%;
   }
   .about-us-info .web-section {
     flex-direction: column;
@@ -343,6 +352,7 @@
   .section-info h3 {
     padding: 5px 0;
   }
+  .section-info h3 { margin-bottom: 45px;}
   .section-mobile-app {
     display: flex;
     justify-items: center;
@@ -368,12 +378,6 @@
     padding-left: 50px;
     flex-basis: 50%;
   }
-  .web-about-box {
-    padding-top: 0;
-    margin-top: 0;
-    flex-basis: 50%;
-    padding-right: 30px;
-  }
   section sub {
     font-size: 75%;
     display: contents;
@@ -384,7 +388,8 @@
   }
   .about-us-info h3 {
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 10px;
+    max-width: 1066px;
   }
   .web-founders {
     margin: 0 auto;
@@ -417,6 +422,7 @@
     font-size: 156.25%;
     padding: 20px 100px;
   }
+  .section-sign-up h4 {max-width: 1200px;}
   .section-sign-up a:link,
   .section-sign-up a:visited {
     color: var(--accent-color);
@@ -436,27 +442,34 @@
     flex-direction: row;
     max-width: 1600px;
     justify-content: space-between;
+    width: 100%;
   }
   .web-about {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-basis: 100%;
     max-width: 1600px;
   }
   .economic-info {
-    margin: 0;
     width: 100%;
   }
   .economic-info p,
   .economic-info blockquote {
     max-width: 675px;
+    width: 100%;
   }
 
   .slider {
+    display: flex;
+    justify-self: center;
     max-width: 675px;
-    height: 430px;
+    height: 420px;
     width: 100%;
+  }
+  .slides { 
+    width: 100%;
+    height: 100%;
   }
   .slides > div {
     margin-right: 10px;
@@ -474,19 +487,28 @@
   .slides blockquote {
     font-size: 18%;
     padding: 5px 10px;
+    text-align: left;
+    max-width: 560px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+  }
+  .slides blockquote::before {
+    content: '' ;
   }
   .economic-benefits {
     justify-content: center;
   }
   .economic-benefits h2 {
     font-size: 312.5%;
+    padding-bottom: 20px;
   }
   .section-ambition {
     flex-direction: column;
     padding: 20px 0;
   }
   .section-ambition h4 {
-    max-width: 1860px;
+    max-width: 900px;
     padding: 5px;
   }
   .section-investors {
@@ -589,4 +611,58 @@
   .links li a:active {
     opacity: 0.6;
   }
+  .team-member {
+    width: 100%; 
+    max-width: 400px !important;
+    box-shadow: 0px 0px 10px #555;
+    opacity: 0.9;
+    text-align: left;
+    /* filter: grayscale(1);*/
+    transition: all 0.5s ease-in-out;
+  }
+  .team-member:hover {
+    opacity: 1;
+   /*  filter: none;
+    cursor: pointer; */
+  }
+  .web-team_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
+    grid-gap: 27px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+/* New Team Section styling */
+.web-about-box,
+.team-header,
+.web-founders { display: none;}
+
+
+
+.team-member img {
+  max-width: 400px;
+  width: 100%;
+}
+.team-member a:link,
+.team-member a:visited {
+  padding: 20px;
+  align-self: flex-end;
+  color: #0077b5;;
+  font-size: 300%;
+}
+.about-us-info .team { margin-bottom: 50px;}
+.about-us-info .team-member p { padding: 0 20px;}
+
+.team-member .team-name { 
+  color: #000;
+  margin-top: 20px;
+  font-size: 156.25%;
+  font-weight: 600;
+}
+.team-member .team-position {
+  font-size: 156.25%;
+  font-weight: 600;
+  margin-top: 0;
 }
