@@ -615,6 +615,7 @@
     width: 100%; 
     max-width: 400px !important;
     box-shadow: 0px 0px 10px #555;
+    justify-content: space-between;
     opacity: 0.9;
     text-align: left;
     /* filter: grayscale(1);*/
