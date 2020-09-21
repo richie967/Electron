@@ -1,4 +1,3 @@
-
 @media (max-width: 1600px) and (min-width: 1200px) {
   .web-box {
     margin-right: 50px;
@@ -6,20 +5,15 @@
   .economic-info {
     margin-right: 50px;
   }
-  .about-box .web-2-1 { margin-right: 50px; }
-  .web-about { margin-right: 50px;}
+  .about-box .web-2-1 {
+    margin-right: 50px;
+  }
+  .web-about {
+    margin-right: 50px;
+  }
 }
 @media (min-width: 1200px) {
   /*** ReUsable Components ***/
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #fff;
-  }
-
   h1 {
     font-size: 312.5%;
   }
@@ -37,28 +31,10 @@
 
   /** Paragrapgh and link styles **/
   p {
-    font-size: 100%;
     line-height: 145%;
-    letter-spacing: 0;
-    padding: 5px 0;
-    font-weight: 400;
   }
-
-  a:link,
-  a:visited {
-    text-decoration: none;
-    color: #707070;
-    border: none;
-    font-weight: 400;
-  }
-
   .btn:link,
   .btn:visited {
-    display: block;
-    background-color: #075e68;
-    border-radius: 5px;
-    position: relative;
-    color: #fff;
     font-size: 156.25%;
     transition: all 0.3s ease;
   }
@@ -68,153 +44,23 @@
     opacity: 0.8;
   }
 
-  /** Header Section & Nav **/
-  header {
-    display: flex;
-    justify-content: space-between;
-    min-height: max-content;
-    padding: 100px;
-    background-color: #000;
-    padding-top: 50px;
-  }
-
-  /** Main-nav Section**/
-  nav {
-    display: flex;
-    flex: 0 1 auto;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: max-content;
-    z-index: 9999;
-    animation: fadeIn 1s ease-in;
-  }
-  .company-name {
-    display: flex;
-    justify-self: flex-start;
-    font-size: 130%;
-    margin-right: auto;
-    margin-left: 20px;
-    letter-spacing: 2px;
-    font-weight: 400;
-  }
-  .mobile-nav-icon {
+  /**  Nav HOME links/logos **/
+  .logo,
+  nav a:link .logo,
+  nav a:visited .logo {
     display: none;
   }
-
-  /** Nav links **/
-  .nav-links {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    justify-self: center;
-  }
-  .nav-links li {
-    display: flex;
-    padding: 20px 30px;
-    text-transform: uppercase;
-  }
-  .nav-links li a:link,
-  .nav-links li a:visited {
-    font-weight: 400;
-    transition: all 0.3s ease 0s;
-  }
-  .nav-links li a:hover,
-  .nav-links li a:active {
-    color: #fff;
-  }
-  .sticky {
-    position: fixed;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: rgba(231, 231, 231, 0.801);
-    box-shadow: 0 2px 2px #b9b9b9;
-    z-index: 9999;
-  }
-  .sticky .company-name {
-    color: #000;
-  }
-  .sticky .nav-links {
-    display: flex;
-  }
-  .sticky .nav-links li {
+  .web-logo:link,
+  .web-logo:visited,
+  nav a:link .web-logo,
+  nav a:visited .web-logo {
     display: inline-flex;
-  }
-  .sticky .nav-links li a:link,
-  .sticky .nav-links li a:visited {
-    padding: 19px 0;
-    color: #555;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s, color 0.3s ease-in-out;
-  }
-  .sticky .nav-links li a:hover,
-  .sticky .nav-links li a:active {
-    color: #999;
-    border-bottom: 2px solid #555;
-  }
-  .sticky a:link .logo-black,
-  .sticky a:visited .logo-black {
-    margin-left: 30px;
-  }
-  section p {
-    font-size: 125%;
-  }
-  section blockquote {
-    font-size: 125%;
-    margin: 5px 0;
-    padding: 5px;
-  }
-  /** Main Heading text **/
-  .title-text-box {
-    align-self: center;
-    align-items: center;
-    text-align: center;
-    max-width: 670px;
-    z-index: 9;
-    margin-top: 100px;
-  }
-  .title-text-box h1 {
-    display: none;
-    margin-bottom: 0;
-  }
-  .title-text-box .web-head {
-    display: block;
-    max-width: 600px;
-    opacity: 0.6;
-    letter-spacing: 1px;
-  }
-  section div {
-    max-width: 800px;
-  }
-  section ul li {
-    font-size: 100%;
-    padding: 13px 0;
-  }
-  section ul li i {
-    margin-right: 20px;
-  }
-  .web-header {
-    display: flex;
+    max-height: auto;
+    max-width: 77px;
     width: 100%;
-    max-width: 1200px;
-    height: auto;
-    justify-self: flex-end;
-    align-self: center;
-  }
-  header {
-    overflow: hidden;
-    padding-bottom: 0;
-  }
-  .header-img {
-    display: none;
-  }
-  .btn-contact:link,
-  .btn-contact:visited { 
-    margin-top: 40px;
-    padding: 20px 25px;
+    padding: 1px;
+    margin: 10px;
+    opacity: 0.8;
   }
   video {
     max-width: 30vw;
@@ -229,79 +75,9 @@
     justify-content: space-evenly;
     overflow: visible;
   }
-  .web-section {
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 1600px;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .section-vision {
-    flex-direction: column;
-    padding-bottom: 50px;
-  }
-  .section-our-vision {
-    margin-left: 0;
-  }
-  .section-our-vision h3 {
-    max-width: 675px;
-    margin-bottom: 55px;
-  }
-  .section-our-vision p {
-    max-width: 675px;
-  }
-  .section-mobile-app img {
-    max-width: 17vw;
-    align-self: center;
-    margin: 0 auto;
-  }
-  .section-my-trip {
-    flex-direction: column;
-    align-items: center;
-  }
-  .app-install { margin-bottom: 0; padding-bottom: 0;}
-  .section-my-trip div {
-    max-width: 1600px;
-  }
-  .routes,
-  .routes p {
-    font-size: 100%;
-  }
-  .routes ul {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 20px;
-    justify-content: space-evenly;
-    text-align: center;
-  }
-  .routes {
-    margin-bottom: 50px;
-  }
-  .routes ul li {
-    align-items: flex-start;
-    padding: 8px;
-    line-height: 150%;
-    font-size: 110%;
-    text-align: left;
-    opacity: 0.7;
-  }
-  .routes ul li span {
-    font-size: 125%;
-    font-weight: 600;
-    opacity: 1;
-  }
-  .trip {
-    align-self: flex-start;
-  }
-  .trip h2,
-  .trip h3 {
-    padding: 0;
-  }
-  .web-trip {
-    flex-direction: column;
-  }
-  .section-our-vision .new-routes {
+
+  /** Section components **/
+  section div {
     max-width: 800px;
   }
   section h1,
@@ -310,32 +86,214 @@
   section h4 {
     max-width: 1600px;
   }
-  .destinations-anim {
-    display: flex;
-    margin: 30px 0;
-  }
-  .destinations-anim img {
-    max-width: 17vw;
-    margin-right: 50px;
-  }
-  .destinations-anim h3 {
-    align-self: center;
-    width: 800px;
-  }
-  
-  .cert {
+  section ul li {
     font-size: 100%;
+    padding: 13px 0;
   }
-  .about-us-info {
+  section ul li i {
+    margin-right: 20px;
+  }
+  section p {
+    font-size: 125%;
+  }
+  section blockquote {
+    font-size: 125%;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  section sub {
+    font-size: 75%;
+    display: contents;
+  }
+  .web-section {
+    display: flex;
+    flex-direction: row-reverse;
     max-width: 1600px;
+    justify-content: space-between;
     width: 100%;
   }
-  .about-us-info .web-section {
-    flex-direction: column;
-    max-width: 1600px;
+
+  /** Main Heading text **/
+  .title-text-box {
+    max-width: 670px;
+    z-index: 9;
+    margin-top: 100px;
   }
-  .section-about-us {
+  .title-text-box h1 {
+    display: block;
+    max-width: 600px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+  }
+  .btn-contact:link,
+  .btn-contact:visited {
+    margin-top: 40px;
+    padding: 20px 25px;
+  }
+
+  /** Header Section & Nav **/
+  header {
+    justify-content: space-between;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  .header-img {
+    display: none;
+  }
+  .web-header {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    justify-self: flex-end;
+    align-self: center;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+  }
+
+  /** Main-Web navigation **/
+  nav {
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    padding: 0 100px;
+    padding-right: 50px;
+    z-index: 9999;
+    animation: fadeIn 1s ease-in;
+  }
+  .company-name {
+    display: flex;
+    justify-self: flex-start;
+    font-size: 140%;
+    margin-right: auto;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+  }
+  .company-home {
+    display: flex;
+    font-size: 130%;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  .company-home i:link,
+  .company-home i:visited,
+  .company-home a:link,
+  .company-home a:visited {
+    transition: all 0.3s ease-in-out;
+  }
+  .company-home i:hover,
+  .company-home i:active,
+  .company-home a:hover,
+  .company-home a:active {
+    color: #fff;
+  }
+  .mobile-nav-icon {
+    display: none;
+  }
+
+  /** Nav links **/
+  .nav-links {
+    display: flex;
+    text-decoration: none;
+    justify-self: center;
+  }
+  .nav-links li {
+    display: flex;
+    padding: 20px 30px;
+    font-size: 125%;
+  }
+  .nav-links li a:link,
+  .nav-links li a:visited {
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+  }
+  .nav-links li a:hover,
+  .nav-links li a:active {
+    color: #fff;
+  }
+
+  /* Sticky nav */
+  .sticky {
+    height: 10vh;
+    background-color: rgba(231, 231, 231, 0.801);
+    box-shadow: 0 2px 2px #b9b9b9;
+    z-index: 9999;
+  }
+  .sticky .company-name {
+    color: #000;
+  }
+  .sticky .company-home i,
+  .sticky .company-home a:link,
+  .sticky .company-home a:visited {
+    color: #555;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  .sticky .company-home i:hover,
+  .sticky .company-home a:hover,
+  .sticky .company-home a:active {
+    color: #999;
+  }
+  .sticky .nav-links {
+    display: flex;
+  }
+  .sticky .nav-links li a:link,
+  .sticky .nav-links li a:visited {
+    padding: 19px 0;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s ease-in-out;
+  }
+  .sticky .nav-links li a:hover,
+  .sticky .nav-links li a:active {
+    color: #999;
+    border-bottom: 2px solid #555;
+  }
+
+  /* Sticky nav Logos */
+  .sticky .web-logo,
+  .sticky a:link .web-logo,
+  .sticky a:visited .web-logo {
+    display: none;
+  }
+  .sticky a:link .logo,
+  .sticky a:visited .logo {
+    display: none;
+  }
+  .sticky a:link .logo-black,
+  .sticky a:visited .logo-black {
+    margin-left: 30px;
+    max-height: 77px;
+  }
+
+  /* Our Vision Section */
+  .section-vision {
     flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .section-our-vision {
+    margin-left: 0;
+  }
+  .vision-header {
+    max-width: 675px;
+    margin-bottom: 30px;
+  }
+  .section-our-vision p {
+    max-width: 675px;
+  }
+
+  /* Mobile app / Air Taxi Section */
+  .section-mobile-app {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .section-mobile-app img {
+    max-width: 17vw;
+    align-self: center;
+    margin: 0 auto;
   }
   .web-mobile {
     flex-direction: row;
@@ -348,22 +306,84 @@
     align-items: flex-start;
     justify-content: space-evenly;
   }
-  .section-info h2,
   .section-info h3 {
-    padding: 5px 0;
+    margin-bottom: 30px;
   }
-  .section-info h3 { margin-bottom: 45px;}
-  .section-mobile-app {
-    display: flex;
-    justify-items: center;
+  .app-install {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .section-my-trip {
+    flex-direction: column;
     align-items: center;
   }
-  .web-1 {
-    justify-content: space-between;
+
+  /* My Trip Section */
+  .section-my-trip div {
+    max-width: 1600px;
   }
+  .routes,
+  .routes p {
+    font-size: 100%;
+  }
+  .routes {
+    margin-bottom: 50px;
+  }
+  .routes_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+  }
+  .routes_grid li {
+    justify-content: flex-start;
+  }
+  .routes-animation img {
+    max-width: 440px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .routes-title {
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .trip {
+    align-self: flex-start;
+  }
+  .web-trip {
+    flex-direction: column;
+  }
+
+  /* Electron 5 Section */
   .electron-5-info h2,
   .electron-5-info h3 {
     padding: 5px 0;
+  }
+  .certification {
+    font-size: 100%;
+  }
+
+  /* About Us Section */
+  .about-us-info {
+    max-width: 1600px;
+    width: 100%;
+  }
+  .about-us-info .web-section {
+    flex-direction: column;
+    max-width: 1600px;
+  }
+  .section-about-us {
+    flex-direction: column;
+  }
+  .about-us-info h3 {
+    margin-bottom: 0;
+    margin-top: 10px;
+    max-width: 1066px;
+  }
+  .web-1 {
+    justify-content: space-between;
   }
   .web-2 {
     padding-top: 20px;
@@ -377,65 +397,6 @@
   .web-2-2 {
     padding-left: 50px;
     flex-basis: 50%;
-  }
-  section sub {
-    font-size: 75%;
-    display: contents;
-  }
-  .team-header {
-    text-transform: none;
-    font-size: 125%;
-  }
-  .about-us-info h3 {
-    margin-bottom: 0;
-    margin-top: 10px;
-    max-width: 1066px;
-  }
-  .web-founders {
-    margin: 0 auto;
-    align-self: center;
-    flex-basis: 50%;
-  }
-  .mob-img {
-    display: none;
-  }
-  .web-img {
-    display: block;
-    max-width: 185px;
-    height: auto;
-    margin-right: 33px;
-  }
-  .names {
-    display: flex;
-    width: 100%;
-    max-width: 675px;
-    justify-content: space-between;
-    font-size: 120%;
-  }
-  .names figure {
-    flex-basis: 33%;
-    padding: 5px;
-    margin-right: 15px;
-  }
-  .section-sign-up {
-    justify-content: center;
-    font-size: 156.25%;
-    padding: 20px 100px;
-  }
-  .section-sign-up h4 {max-width: 1200px;}
-  .section-sign-up a:link,
-  .section-sign-up a:visited {
-    color: var(--accent-color);
-    text-shadow: none;
-    font-weight: 500;
-  }
-  .btn-career:link,
-  .btn-career:visited {
-    color: #fff;
-    background-color: #fff;
-    font-size: 75%;
-    padding: 10px 20px;
-    margin-left: 30px;
   }
   .about-box {
     display: flex;
@@ -451,15 +412,69 @@
     flex-basis: 100%;
     max-width: 1600px;
   }
-  .economic-info {
+  .team-header {
+    text-transform: none;
+    font-size: 125%;
+  }
+  .team-member {
     width: 100%;
+    justify-content: space-between;
+    max-width: 400px !important;
+    box-shadow: 0px 0px 10px #555;
+    opacity: 0.9;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+  }
+  .team-member:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .web-team_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
+    grid-gap: 27px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* Sign Up Section */
+  .section-sign-up {
+    justify-content: center;
+    font-size: 156.25%;
+    padding: 20px 100px;
+  }
+  .section-sign-up h4 {
+    max-width: 1200px;
+  }
+  .section-sign-up a:link,
+  .section-sign-up a:visited {
+    color: var(--accent-color);
+    text-shadow: none;
+    font-weight: 500;
+  }
+  .btn-career:link,
+  .btn-career:visited {
+    color: #fff;
+    background-color: #fff;
+    font-size: 75%;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+
+  /* Economic Section */
+  .economic-benefits {
+    justify-content: center;
+  }
+  .economic-benefits h2 {
+    font-size: 312.5%;
+    padding-bottom: 20px;
   }
   .economic-info p,
   .economic-info blockquote {
     max-width: 675px;
     width: 100%;
   }
-
   .slider {
     display: flex;
     justify-self: center;
@@ -467,7 +482,7 @@
     height: 420px;
     width: 100%;
   }
-  .slides { 
+  .slides {
     width: 100%;
     height: 100%;
   }
@@ -494,15 +509,10 @@
     height: 100%;
   }
   .slides blockquote::before {
-    content: '' ;
+    content: "";
   }
-  .economic-benefits {
-    justify-content: center;
-  }
-  .economic-benefits h2 {
-    font-size: 312.5%;
-    padding-bottom: 20px;
-  }
+
+  /*  ATI Section  */
   .section-ambition {
     flex-direction: column;
     padding: 20px 0;
@@ -511,11 +521,8 @@
     max-width: 900px;
     padding: 5px;
   }
-  .section-investors {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
+  /*  Investors Section  */
   .investors-content {
     max-width: 1600px;
     width: 100%;
@@ -537,10 +544,10 @@
   }
   .section-investors h2 {
     font-size: 312.5%;
-    align-self: flex-start;
-    margin-left: 0;
     margin-bottom: 30px;
   }
+
+  /*  Contact Us Section  */
   .web-contact {
     justify-content: flex-start;
     flex-basis: 50%;
@@ -559,6 +566,7 @@
     padding: 0;
     max-width: 675px;
     width: 100%;
+    margin-bottom: 30px;
   }
   .section-contact-us .web-section {
     flex-direction: row;
@@ -576,20 +584,12 @@
   footer ul {
     list-style: none;
   }
-  footer a:link .logo,
-  footer a:visited .logo {
+  footer .footer-logo {
     display: inline-block;
     margin-right: 30px;
-    max-height: 90px;
-
+    max-height: 86px;
     filter: drop-shadow(0 -6mm 4mm #000);
-    transition: transform 0.3s ease-in-out;
   }
-  footer a:hover .logo,
-  footer a:active .logo {
-    transform: scale(1.01);
-  }
-
   .links {
     display: flex;
     flex-direction: row;
@@ -611,59 +611,12 @@
   .links li a:active {
     opacity: 0.6;
   }
-  .team-member {
-    width: 100%; 
-    max-width: 400px !important;
-    box-shadow: 0px 0px 10px #555;
-    justify-content: space-between;
-    opacity: 0.9;
-    text-align: left;
-    /* filter: grayscale(1);*/
-    transition: all 0.5s ease-in-out;
+  .js--wp-team {
+    opacity: 0;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
   }
-  .team-member:hover {
+  .js--wp-team.animated {
     opacity: 1;
-   /*  filter: none;
-    cursor: pointer; */
   }
-  .web-team_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
-    grid-gap: 27px;
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-}
-/* New Team Section styling */
-.web-about-box,
-.team-header,
-.web-founders { display: none;}
-
-
-
-.team-member img {
-  max-width: 400px;
-  width: 100%;
-}
-.team-member a:link,
-.team-member a:visited {
-  padding: 20px;
-  align-self: flex-end;
-  color: #0077b5;;
-  font-size: 300%;
-}
-.about-us-info .team { margin-bottom: 50px;}
-.about-us-info .team-member p { padding: 0 20px;}
-
-.team-member .team-name { 
-  color: #000;
-  margin-top: 20px;
-  font-size: 156.25%;
-  font-weight: 600;
-}
-.team-member .team-position {
-  font-size: 156.25%;
-  font-weight: 600;
-  margin-top: 0;
 }
