@@ -221,21 +221,13 @@
     box-shadow: 0 2px 2px #b9b9b9;
     z-index: 9999;
   }
-  .sticky .company-name {
+  
+  .sticky .company-name,
+  .sticky .company-name a:link,
+  .sticky .company-name a:visited {
     color: #000;
   }
-  .sticky .company-home i,
-  .sticky .company-home a:link,
-  .sticky .company-home a:visited {
-    color: #555;
-    background-color: transparent;
-    transition: all 0.3s ease;
-  }
-  .sticky .company-home i:hover,
-  .sticky .company-home a:hover,
-  .sticky .company-home a:active {
-    color: #999;
-  }
+  
   .sticky .nav-links {
     display: flex;
   }
