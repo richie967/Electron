@@ -28,8 +28,8 @@ body {
   align-items: center;
   overflow: hidden;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.486)), url(web-header-v2.png);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.486)), url(web-header-v2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.486)), url(web-header.png);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.486)), url(web-header.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
