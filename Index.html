@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Electron Aviation, Electric Aircraft, Future Aviation Solutions, Air Taxi, Regional air mobility, Zero Emissions Aircraft"/>
   <meta name="description"
     content="Electron Aviation: Enabling truly sustainable regional air mobility. 500,000+ potential new routes" />
 
@@ -11,7 +13,9 @@
   <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
   <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
   <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-  <script src="https://kit.fontawesome.com/118b47f581.js" crossorigin="anonymous"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/118b47f581.js" crossorigin=""></script>
+
 
   <title>Electron Aviation</title>
 
@@ -36,15 +40,23 @@
 </head>
 
 <body>
-  <header id="home-link">
-    <nav id="scrollTop">
-      <a href="#home-link" class="hide-logo js--logo"><img src="assets/logo/black-logo.png"
+  <div class="cookie-banner" style="display: none;">
+    <p>
+        By visiting our website, you agree to our &mdash;
+        <a href="insert-link">cookie policy</a>&nbsp;
+        <i class="fas fa-times close"></i>
+        <sub>Close notice</sub>
+      </p>
+  </div>
+  <header id="scrollTop">
+    <nav>
+      <a href="#scrollTop" class="hide-logo js--logo"><img src="assets/logo/black-logo.png"
           alt="Electron Aviation Company Logo" class="logo-black hide-logo js--logo"></a>
-      <a href="#home-link" class="logo"><img src="assets/logo/electron-aviation-logo2.png"
+      <a href="#scrollTop" class="logo"><img src="assets/logo/electron-aviation-logo2.png"
           alt="Electron Aviation Company Logo" class="logo"></a>
-      <a href="#home-link" class="web-logo"><img src="assets/logo/logo-white.png" alt="Electron Aviation Company Logo"
+      <a href="#scrollTop" class="web-logo"><img src="assets/logo/logo-white.png" alt="Electron Aviation Company Logo"
           class="web-logo"></a>
-      <h1 class="company-name"><a href="#home-link">Electron Aviation</a></h1>
+      <h1 class="company-name"><a href="#scrollTop">Electron Aviation</a></h1>
       <ul class="nav-links navbar js--nav-links">
         <li><a href="#vision">Our Vision</a></li>
         <li><a href="#airtaxi">Air Taxi</a></li>
@@ -59,14 +71,12 @@
         <span></span>
       </div>
     </nav>
-    <img src="assets/images/header-render4k.png" alt="Front view render of aircraft Electron 5"
+    <img src="assets/images/mobile-header.png" alt="Front view render of aircraft Electron 5 emerging out of the darkness"
       class="header-img animated fadeIn">
     <div class="title-text-box">
       <h1>enabling sustainable <br>air mobility</h1>
       <a class="btn btn-contact js--btn-contact" href="#vision">Read More</a>
     </div>
-    <img src="assets/images/web_header.png" alt="Front view render of aircraft Electron 5"
-      class="web-header animated fadeIn">
   </header>
 
   <section class="section-vision" id="vision">
@@ -95,7 +105,7 @@
         <h2>700 uk destinations</h2>
         <h3>500,000+ NEW <span>possible domestic routes</span></h3>
       </div>
-      <img src="assets/animations/re-render.gif" alt="Possible destinations for the UK animation" class="js--wp-5">
+      <img src="assets/animations/re-render.gif" alt="Possible destinations for the UK animation" class="js--wp-1">
       <ul class="routes-colors">
         <li><i class="fas fa-circle list-icon icon-current"></i>Current destinations</li>
         <li><i class="fas fa-circle list-icon icon-new"></i>New destinations</li>
@@ -126,7 +136,7 @@
         <p class="app-install">Install the App, and hail a plane!</p>
         <sub>(Image shows example app)</sub>
       </div>
-      <img src="assets/images/app2.png" alt="iPhone screen example of app" class="js--wp-3">
+      <img src="assets/images/app2.png" alt="iPhone screen example of app" class="js--wp-2">
     </div>
   </section>
 
@@ -166,7 +176,7 @@
 
   <section class="section-electron-5 js--electron-5" id="electron-5">
     <div class="electron-5">
-      <img src="assets/images/3q-view-v2.1-White-BG.png" alt="Electric aircraft prototype" class="js--wp-2">
+      <img src="assets/images/3q-view-v2.1-White-BG.png" alt="Electric aircraft prototype" class="js--wp-3">
     </div>
     <div class="electron-5-info">
       <h2>electron 5</h2>
@@ -279,10 +289,11 @@
           margin
           and revitalising this industry.</p>
       </div>
-      <div class="slider quotes-carousel">
-        <div class="slides">
-          <div id="slide-1">
-            <p>From the Aerospace Sector Deal;<br>
+      <div class="carousel-container">
+        <div class="carousel-wrapper" id="quotes">
+  
+          <div class="carousel-item fadeIn">
+            <i class="fas fa-quote-left list-icon"></i>
             <blockquote><i>&apos;Environmentally friendly aircraft will increasingly incorporate
                 electric technologies, and we anticipate more aircraft operating autonomously in the future. New markets
                 for
@@ -290,30 +301,33 @@
                 these
                 exciting developments much as we were when Sir Frank Whittle developed the world&apos;s first jet
                 engine.&apos;</i></blockquote>
-            </p>
+            <p><i>Aerospace Sector Deal</i></p>
           </div>
-          <div id="slide-2">
-            <p>From the Future Flight Challenge;<br>
+  
+          <div class="carousel-item fadeIn">
+            <i class="fas fa-quote-left list-icon"></i>
             <blockquote><i>&apos;The UK has played a leading role in aviation over the last 100
                 years and is well-placed to take advantage of a new generation of aircraft that could help to ease
                 congestion
                 and reduce the carbon footprint of the industry.&apos;</i></blockquote>
-            </p>
+            <p><i>Future Flight Challenge</i></p>
           </div>
-          <div id="slide-3">
-            <p>Business Minister Nadhim Zahawi said;<br>
+  
+          <div class="carousel-item fadeIn">
+            <i class="fas fa-quote-left list-icon"></i>
             <blockquote><i>&apos;The UK has a proud heritage and enviable worldwide reputation
                 for advances in aviation technology. The electrification of flight has the potential to revolutionise
                 the
                 way
-                we travel and transform aviation for decades to come – ensuring we can travel worldwide while
+                we travel and transform aviation for decades to come &#45; ensuring we can travel worldwide while
                 maintaining
                 a
                 low carbon footprint.&apos;</i></blockquote>
-            </p>
+            <p><i>Business Minister Nadhim Zahawi</i></p>
           </div>
-          <div id="slide-4">
-            <p>From the ATI ACCELERATING AMBITION Technology Strategy 2019;<br>
+  
+          <div class="carousel-item fadeIn">
+            <i class="fas fa-quote-left list-icon"></i>
             <blockquote><i>&apos;By 2030, we expect to see the
                 emergence of entirely new aviation markets in the sub-regional and urban environments. Rethinking
                 aircraft
@@ -322,21 +336,17 @@
                 benefits
                 and
                 lower environmental impact.&apos;</i></blockquote>
-            </p>
-          </div>
-          <div id="slide-5">
-            <p>From the Aerospace Sector Deal;<br>
-            <blockquote><i>&apos;Boosting innovation through a joint industry and government
-                investment in the Future Flight challenge, with up to &pound;125 million of funding from the Industrial
-                Strategy Challenge Fund, which industry will match. This programme will invest in developing
-                demonstrators
-                of
-                new aircraft (such as drones and other electric aircraft), new models of airspace management, new
-                approaches
-                to ground support infrastructure and new markets for aircraft in local areas.&apos;</i></blockquote>
-            </p>
+            <p><i>ATI ACCELERATING AMBITION Technology Strategy 2019</i></p>
           </div>
         </div>
+        <!-- Dots -->
+        <div class="nav-dots">
+          <div class="nav-dot" onclick="currentSlide(1)"></div>
+          <div class="nav-dot" onclick="currentSlide(2)"></div>
+          <div class="nav-dot" onclick="currentSlide(3)"></div>
+          <div class="nav-dot" onclick="currentSlide(4)"></div>
+        </div>
+        <!-- ./Dots -->
       </div>
     </div>
   </section>
@@ -361,8 +371,18 @@
             for green modes of transport has grown significantly over the last 10 years. Together with the massive
             decrease in cost of batteries, we believe this is the right time to start manufacturing high efficiency
             electric aircraft.</p>
+          <p>From the Aerospace Sector Deal;<br>
+              <blockquote><i>&apos;Boosting innovation through a joint industry and government
+              investment in the Future Flight challenge, with up to &pound;125 million of funding from the Industrial
+              Strategy Challenge Fund, which industry will match. This programme will invest in developing
+              demonstrators
+              of
+              new aircraft (such as drones and other electric aircraft), new models of airspace management, new
+              approaches
+              to ground support infrastructure and new markets for aircraft in local areas.&apos;</i></blockquote>
+          </p>
         </div>
-        <div class="web-box">
+        <div class="web-box web-3">
           <p>Key financial figures include, a base price of &pound;450,000. This is competitive with other 4 seater twin
             or single engine light aircraft with similar range and speed. In summary, our goal is to manufacture,
             certify
@@ -384,7 +404,69 @@
           in
           sustainable aviation, investing in our project, or anything else...</p>
       </div>
-      <div id="ff-compose"></div>
+      <!-- https://docs.google.com/forms/u/0/d/e/1FAIpQLSdGA2EsByySSafG8_nGYe5IO5wUmRT3rjyIgYKRrjQN2WRdSg/formResponse -->
+      
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdGA2EsByySSafG8_nGYe5IO5wUmRT3rjyIgYKRrjQN2WRdSg/formResponse" autocomplete="off"
+        target="_self" method="post" id="contact_form" class="contact-form" onsubmit="">
+        <div class="form-name">
+          <div>
+            <label for="nameField">Name <sup>*</sup></label>
+          </div>
+          <div>
+            <input class="nameplace" type="text" name="entry.2005620554" id="nameField" placeholder="Name" required>
+          </div>
+        </div>
+      
+        <div class="form-email">
+          <div>
+            <label for="emailField">Email <sup>*</sup></label>
+          </div>
+          <div>
+            <input class="nameplace" type="email" name="entry.1045781291" id="emailField" placeholder="E-mail" required>
+          </div>
+        </div>
+      
+        <div class="form-find-us">
+          <div>
+            <label for="findusField">How did you hear about us?</label>
+          </div>
+          <div>
+            <select name="entry.1536376047" id="findusField">
+              <option value="" selected>Select</option>
+              <option value="friends">Recommended by a friend or colleague</option>
+              <option value="internet">Social Media</option>
+              <option value="advert">Blog or publication</option>
+              <option value="event">Event</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-phone">
+          <div>
+            <label for="phoneField">Phone Number</label>
+          </div>
+          <div>
+            <input class="nameplace" type="tel" name="entry.1166974658" id="phoneField" placeholder="Contact number">
+          </div>
+        </div>
+      
+        <div class="form-message">
+          <div>
+            <label for="messageField">Comments</label>
+          </div>
+          <div>
+            <textarea id="messageField" name="entry.839337160" placeholder="Your message"></textarea>
+          </div>
+        </div>
+      
+        <div class="submit-btn">
+          <div>
+            <input type="submit" id="Send" class="btn">
+          </div>
+        </div>
+    </form>
+   
     </div>
   </section>
 
@@ -397,18 +479,22 @@
       <li><a href="#investors">Investment</a></li>
       <li><a href="#contact-us">Contact Us</a></li>
     </ul>
-    <a href="#home-link"><img src="assets/logo/electron-aviation-logo2.png" alt="Footer company logo"
-        class="footer-logo"></a>
+    <div class="home-link-container">
+      <a href="#scrollTop"><img src="assets/logo/electron-aviation-logo2.png" alt="Footer company logo"
+          class="footer-logo"></a>
+      <div class="home-overlay">
+        <a href="#scrollTop"><p>Back to top</p></a>
+      </div>
+    </div>
   </footer>
 
-  <script async defer
-    src="https://formfacade.com/include/115023965576437680533/form/1FAIpQLSdGA2EsByySSafG8_nGYe5IO5wUmRT3rjyIgYKRrjQN2WRdSg/classic.js?div=ff-compose"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/jquery.js"></script>
   <script src="resources/js/script.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64295548-2"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64295548-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }

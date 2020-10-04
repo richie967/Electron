@@ -1,150 +1,63 @@
-$(document).ready(function () {
-    if ($(window).width() >= 1200) {
-        /* For sticky navigation */
-        $('.js--vision').waypoint(function (direction) {
-            if (direction == "down") {
-                $('nav').addClass('sticky');
-                $('.js--logo').removeClass('hide-logo');
-            } else {
-                $('nav').removeClass('sticky');
-                $('.js--logo').addClass('hide-logo');
-            }
-        }, {
-            offset: '60px;'
-        });
-    }
+/* Carousel-automation */
+var slideIndex = 1;
 
-    /* test (fix) nav */
-    /* ***  Less than 1200px screen size (mobile/ tablet)  *** */
-    else if ($(window).width() <= 1200) {
+var myTimer;
 
-        /* Remove sticky nav on scroll to top */
-        $(window).scroll(function () {
-            top_offset = $(window).scrollTop();
-            nav = $('.js--nav-links');
-            logo = $('.js--logo');
+var quotesContainer;
 
-            if (top_offset === 0) {
-                nav.removeClass('sticky');
-                $('nav').removeClass('sticky');
-                $("nav").removeClass("nav-open");
-                $('.js--nav-icon').removeClass('open');
-            }
-        });
+window.addEventListener("load", function() {
+    showslide(slideIndex);
+    myTimer = setInterval(function() {plusSlide(1)}, 6500);
 
-        /* Sticky navigation */
-        lastScroll = 0;
-        $(window).on('scroll', function () {
-            scroll = $(window).scrollTop();
-            if (lastScroll - scroll > 0) {
-                $("nav").addClass("sticky");
-                $('.js--logo').removeClass('hide-logo');
-                $('.logo').addClass('hide-logo');
-                $('.js--nav-icon').removeClass('open');
-                $("nav").removeClass("nav-open");
-            } else {
-                $("nav").removeClass("sticky");
-                $('.js--nav-icon').removeClass('open');
-                $("nav").removeClass("nav-open");
-            }
-            lastScroll = scroll;
-        });
-        /* Mobile Navigation */
-        $('.js--nav-icon').click(function () {
-            nav = $('.js--nav-links');
-            logo = $('.js--logo');
+    quotesContainer = document.getElementsByClassName("carousel-wrapper")[0];
 
-            $(this).toggleClass('open');
-            $("nav").toggleClass("nav-open");
-            $('.logo').addClass('hide-logo');
-            logo.removeClass('hide-logo');
-            nav.slideToggle(300);
-            if ($('nav').hasClass('sticky')) {
-                $('.logo').addClass('hide-logo');
-                logo.removeClass('hide-logo');
-            }
-
-            if ($('.js--nav-icon').hasClass('open')) {
-                logo.removeClass('hide-logo');
-                $('.logo').addClass('hide-logo');
-            }
-        });
-
-        /* Mobile / Sticky Links onClick */
-        $('.js--nav-links li a').on('click', function () {
-            icon = $('.js--nav-icon');
-            nav = $('.js--nav-links');
-            nav.slideToggle(300);
-            if (icon.hasClass('open')); {
-                icon.removeClass('open');
-                $("nav").removeClass("nav-open");
-            }
-        });
-
-        /* Animations on mobile */
-        $('.js--wp-rich').waypoint(function (direction) {
-            $('.js--wp-rich').addClass('animated fadeIn');
-        }, {
-            offset: '75%'
-        });
-        $('.js--wp-josef').waypoint(function (direction) {
-            $('.js--wp-josef').addClass('animated fadeIn');
-        }, {
-            offset: '75%'
-        });
-        $('.js--wp-james').waypoint(function (direction) {
-            $('.js--wp-james').addClass('animated fadeIn');
-        }, {
-            offset: '75%'
-        });
-    }
-
-    /*  Animations  */
-
-    /* ***** ANIMATE.CSS jQuery temp ***** 
-
-    $(document).ready(function(){
-        $("#id").fadeIn(1000).delay(3000).fadeOut(1000);
-    });
-
-    ***** ANIMATE.CSS jQuery temp ***** */
-    /* Header Image */
-    /* $('.js--wp-1').waypoint(function (direction) {
-        $('.js--wp-1').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-    }); 
-    
-    */
-
-    $('.js--wp-2').waypoint(function (direction) {
-        $('.js--wp-2').addClass('animated fadeInRight');
-    }, {
-        offset: '70%'
-    });
-
-    $('.js--wp-3').waypoint(function (direction) {
-        $('.js--wp-3').addClass('animated fadeInUp');
-    }, {
-        offset: '70%'
-    });
-
-    $('.js--wp-4').waypoint(function (direction) {
-        $('.js--wp-4').addClass('animated flipInX');
-    }, {
-        offset: '70%'
-    });
-
-    $('.js--wp-5').waypoint(function (direction) {
-        $('.js--wp-5').addClass('animated fadeIn');
-    }, {
-        offset: '60%'
-    });
-
-    $('.js--wp-team').waypoint(function (direction) {
-        $('.js--wp-team').addClass('animated fadeIn');
-    }, {
-        offset: '75%'
-    });
-
+    quotesContainer.addEventListener('mouseenter', pause)
+    quotesContainer.addEventListener('mouseleave', resume)
 });
+
+function plusSlide(n) {
+    clearInterval(myTimer);
+    if (n < 0) {
+        showslide(slideIndex -= 1);
+    } else {
+        showslide(slideIndex += 1);
+    }
+    if (n === -1) {
+        myTimer = setInterval(function () { plusSlide(n + 2) }, 6500);
+    } else {
+        myTimer = setInterval(function () { plusSlide(n + 1) }, 6500)
+    }
+}
+
+/* onClick Dots */
+function currentSlide(n) {
+    clearInterval(myTimer);
+    myTimer = setInterval(function() {
+        plusSlide(n + 1)}, 6500);
+    showslide(slideIndex = n);
+}
+
+function showslide(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel-item");
+    var dots = document.getElementsByClassName("nav-dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", " ");
+    }
+    slides[slideIndex-1].style.display = "flex";
+    dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+    clearInterval(myTimer);
+}
+
+resume = () => {
+    clearInterval(myTimer);
+    myTimer = setInterval(function () { plusSlide(slideIndex) }, 6500);
+}
